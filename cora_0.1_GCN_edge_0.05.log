@@ -1,1096 +1,663 @@
-INFO:2025-03-03 19:59:42,227: - root - : cora_0.1_GCN_edge_0.05
-INFO:2025-03-03 19:59:42,232: - data_store - : folder temp_data/processed_data/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:42,232: - data_store - : folder temp_data/models/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:42,233: - data_store - : folder temp_data/analysis_data/optimal/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:42,233: - data_store - : folder temp_data/analysis_data/posteriors/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:57,465: - root - : cora_0.1_GCN_edge_0.05
-INFO:2025-03-03 19:59:57,469: - data_store - : folder temp_data/processed_data/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:57,471: - data_store - : folder temp_data/models/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:57,472: - data_store - : folder temp_data/analysis_data/optimal/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:57,472: - data_store - : folder temp_data/analysis_data/posteriors/cora exists, do not need to create again.
-INFO:2025-03-03 19:59:57,473: - data_store - : loading raw data
-INFO:2025-03-03 19:59:57,481: - ExpGraphInfluenceFunction - : splitting train/test data
-INFO:2025-03-03 19:59:57,482: - data_store - : saving train test split data
-DEBUG:2025-03-03 19:59:57,483: - ExpGraphInfluenceFunction - : Train data  #.Nodes: 2708.000000, #.Edges: 10556.000000
-INFO:2025-03-03 19:59:57,487: - ExpGraphInfluenceFunction - : target model: GCN
-INFO:2025-03-03 19:59:57,488: - node_classifier - : target model: GCN
-INFO:2025-03-03 19:59:58,749: - ExpGraphInfluenceFunction - : Run 0.000000
-INFO:2025-03-03 19:59:58,750: - ExpGraphInfluenceFunction - : training target models, run 0
-INFO:2025-03-03 19:59:58,750: - node_classifier - : training model
-INFO:2025-03-03 19:59:58,850: - node_classifier - : generate train loader
-INFO:2025-03-03 19:59:58,854: - node_classifier - : generate train loader finish
-INFO:2025-03-03 19:59:58,855: - node_classifier - : epoch 0
-INFO:2025-03-03 19:59:59,701: - node_classifier - : Train: 0.4690, Test: 0.4686
-INFO:2025-03-03 19:59:59,702: - node_classifier - : epoch 1
-INFO:2025-03-03 19:59:59,758: - node_classifier - : Train: 0.5691, Test: 0.5683
-INFO:2025-03-03 19:59:59,758: - node_classifier - : epoch 2
-INFO:2025-03-03 19:59:59,811: - node_classifier - : Train: 0.6951, Test: 0.6900
-INFO:2025-03-03 19:59:59,811: - node_classifier - : epoch 3
-INFO:2025-03-03 19:59:59,864: - node_classifier - : Train: 0.7481, Test: 0.7343
-INFO:2025-03-03 19:59:59,864: - node_classifier - : epoch 4
-INFO:2025-03-03 19:59:59,916: - node_classifier - : Train: 0.7846, Test: 0.7860
-INFO:2025-03-03 19:59:59,917: - node_classifier - : epoch 5
-INFO:2025-03-03 19:59:59,969: - node_classifier - : Train: 0.7977, Test: 0.8081
-INFO:2025-03-03 19:59:59,970: - node_classifier - : epoch 6
-INFO:2025-03-03 20:00:00,025: - node_classifier - : Train: 0.8121, Test: 0.8044
-INFO:2025-03-03 20:00:00,025: - node_classifier - : epoch 7
-INFO:2025-03-03 20:00:00,077: - node_classifier - : Train: 0.8285, Test: 0.8118
-INFO:2025-03-03 20:00:00,078: - node_classifier - : epoch 8
-INFO:2025-03-03 20:00:00,131: - node_classifier - : Train: 0.8441, Test: 0.8229
-INFO:2025-03-03 20:00:00,132: - node_classifier - : epoch 9
-INFO:2025-03-03 20:00:00,183: - node_classifier - : Train: 0.8588, Test: 0.8266
-INFO:2025-03-03 20:00:00,183: - node_classifier - : epoch 10
-INFO:2025-03-03 20:00:00,237: - node_classifier - : Train: 0.8638, Test: 0.8339
-INFO:2025-03-03 20:00:00,238: - node_classifier - : epoch 11
-INFO:2025-03-03 20:00:00,289: - node_classifier - : Train: 0.8629, Test: 0.8339
-INFO:2025-03-03 20:00:00,290: - node_classifier - : epoch 12
-INFO:2025-03-03 20:00:00,342: - node_classifier - : Train: 0.8769, Test: 0.8155
-INFO:2025-03-03 20:00:00,343: - node_classifier - : epoch 13
-INFO:2025-03-03 20:00:00,393: - node_classifier - : Train: 0.8646, Test: 0.8450
-INFO:2025-03-03 20:00:00,394: - node_classifier - : epoch 14
-INFO:2025-03-03 20:00:00,445: - node_classifier - : Train: 0.8744, Test: 0.8376
-INFO:2025-03-03 20:00:00,445: - node_classifier - : epoch 15
-INFO:2025-03-03 20:00:00,496: - node_classifier - : Train: 0.8810, Test: 0.8266
-INFO:2025-03-03 20:00:00,497: - node_classifier - : epoch 16
-INFO:2025-03-03 20:00:00,549: - node_classifier - : Train: 0.8753, Test: 0.8303
-INFO:2025-03-03 20:00:00,550: - node_classifier - : epoch 17
-INFO:2025-03-03 20:00:00,601: - node_classifier - : Train: 0.8818, Test: 0.8303
-INFO:2025-03-03 20:00:00,601: - node_classifier - : epoch 18
-INFO:2025-03-03 20:00:00,652: - node_classifier - : Train: 0.8736, Test: 0.8303
-INFO:2025-03-03 20:00:00,652: - node_classifier - : epoch 19
-INFO:2025-03-03 20:00:00,701: - node_classifier - : Train: 0.8851, Test: 0.8413
-INFO:2025-03-03 20:00:00,702: - node_classifier - : epoch 20
-INFO:2025-03-03 20:00:00,753: - node_classifier - : Train: 0.8847, Test: 0.8524
-INFO:2025-03-03 20:00:00,753: - node_classifier - : epoch 21
-INFO:2025-03-03 20:00:00,805: - node_classifier - : Train: 0.8847, Test: 0.8450
-INFO:2025-03-03 20:00:00,805: - node_classifier - : epoch 22
-INFO:2025-03-03 20:00:00,856: - node_classifier - : Train: 0.8851, Test: 0.8413
-INFO:2025-03-03 20:00:00,856: - node_classifier - : epoch 23
-INFO:2025-03-03 20:00:00,907: - node_classifier - : Train: 0.8863, Test: 0.8339
-INFO:2025-03-03 20:00:00,907: - node_classifier - : epoch 24
-INFO:2025-03-03 20:00:00,958: - node_classifier - : Train: 0.8892, Test: 0.8413
-INFO:2025-03-03 20:00:00,958: - node_classifier - : epoch 25
-INFO:2025-03-03 20:00:01,010: - node_classifier - : Train: 0.8896, Test: 0.8376
-INFO:2025-03-03 20:00:01,010: - node_classifier - : epoch 26
-INFO:2025-03-03 20:00:01,067: - node_classifier - : Train: 0.8892, Test: 0.8376
-INFO:2025-03-03 20:00:01,067: - node_classifier - : epoch 27
-INFO:2025-03-03 20:00:01,125: - node_classifier - : Train: 0.8929, Test: 0.8376
-INFO:2025-03-03 20:00:01,125: - node_classifier - : epoch 28
-INFO:2025-03-03 20:00:01,182: - node_classifier - : Train: 0.8892, Test: 0.8413
-INFO:2025-03-03 20:00:01,182: - node_classifier - : epoch 29
-INFO:2025-03-03 20:00:01,236: - node_classifier - : Train: 0.8929, Test: 0.8376
-INFO:2025-03-03 20:00:01,236: - node_classifier - : epoch 30
-INFO:2025-03-03 20:00:01,292: - node_classifier - : Train: 0.8896, Test: 0.8303
-INFO:2025-03-03 20:00:01,293: - node_classifier - : epoch 31
-INFO:2025-03-03 20:00:01,347: - node_classifier - : Train: 0.8950, Test: 0.8487
-INFO:2025-03-03 20:00:01,347: - node_classifier - : epoch 32
-INFO:2025-03-03 20:00:01,400: - node_classifier - : Train: 0.8917, Test: 0.8450
-INFO:2025-03-03 20:00:01,400: - node_classifier - : epoch 33
-INFO:2025-03-03 20:00:01,452: - node_classifier - : Train: 0.8962, Test: 0.8450
-INFO:2025-03-03 20:00:01,452: - node_classifier - : epoch 34
-INFO:2025-03-03 20:00:01,502: - node_classifier - : Train: 0.8982, Test: 0.8450
-INFO:2025-03-03 20:00:01,502: - node_classifier - : epoch 35
-INFO:2025-03-03 20:00:01,559: - node_classifier - : Train: 0.8925, Test: 0.8561
-INFO:2025-03-03 20:00:01,559: - node_classifier - : epoch 36
-INFO:2025-03-03 20:00:01,614: - node_classifier - : Train: 0.8937, Test: 0.8266
-INFO:2025-03-03 20:00:01,614: - node_classifier - : epoch 37
-INFO:2025-03-03 20:00:01,667: - node_classifier - : Train: 0.8929, Test: 0.8450
-INFO:2025-03-03 20:00:01,668: - node_classifier - : epoch 38
-INFO:2025-03-03 20:00:01,746: - node_classifier - : Train: 0.8954, Test: 0.8450
-INFO:2025-03-03 20:00:01,747: - node_classifier - : epoch 39
-INFO:2025-03-03 20:00:01,803: - node_classifier - : Train: 0.8913, Test: 0.8487
-INFO:2025-03-03 20:00:01,803: - node_classifier - : epoch 40
-INFO:2025-03-03 20:00:01,855: - node_classifier - : Train: 0.8974, Test: 0.8487
-INFO:2025-03-03 20:00:01,855: - node_classifier - : epoch 41
-INFO:2025-03-03 20:00:01,903: - node_classifier - : Train: 0.8908, Test: 0.8413
-INFO:2025-03-03 20:00:01,903: - node_classifier - : epoch 42
-INFO:2025-03-03 20:00:01,954: - node_classifier - : Train: 0.8954, Test: 0.8339
-INFO:2025-03-03 20:00:01,955: - node_classifier - : epoch 43
-INFO:2025-03-03 20:00:02,005: - node_classifier - : Train: 0.8954, Test: 0.8450
-INFO:2025-03-03 20:00:02,006: - node_classifier - : epoch 44
-INFO:2025-03-03 20:00:02,057: - node_classifier - : Train: 0.8954, Test: 0.8524
-INFO:2025-03-03 20:00:02,057: - node_classifier - : epoch 45
-INFO:2025-03-03 20:00:02,108: - node_classifier - : Train: 0.8986, Test: 0.8487
-INFO:2025-03-03 20:00:02,109: - node_classifier - : epoch 46
-INFO:2025-03-03 20:00:02,162: - node_classifier - : Train: 0.8978, Test: 0.8376
-INFO:2025-03-03 20:00:02,162: - node_classifier - : epoch 47
-INFO:2025-03-03 20:00:02,218: - node_classifier - : Train: 0.8974, Test: 0.8339
-INFO:2025-03-03 20:00:02,218: - node_classifier - : epoch 48
-INFO:2025-03-03 20:00:02,270: - node_classifier - : Train: 0.8892, Test: 0.8450
-INFO:2025-03-03 20:00:02,270: - node_classifier - : epoch 49
-INFO:2025-03-03 20:00:02,323: - node_classifier - : Train: 0.8962, Test: 0.8450
-INFO:2025-03-03 20:00:02,324: - node_classifier - : epoch 50
-INFO:2025-03-03 20:00:02,377: - node_classifier - : Train: 0.8966, Test: 0.8561
-INFO:2025-03-03 20:00:02,378: - node_classifier - : epoch 51
-INFO:2025-03-03 20:00:02,429: - node_classifier - : Train: 0.8933, Test: 0.8450
-INFO:2025-03-03 20:00:02,429: - node_classifier - : epoch 52
-INFO:2025-03-03 20:00:02,481: - node_classifier - : Train: 0.9007, Test: 0.8487
-INFO:2025-03-03 20:00:02,481: - node_classifier - : epoch 53
-INFO:2025-03-03 20:00:02,532: - node_classifier - : Train: 0.8933, Test: 0.8303
-INFO:2025-03-03 20:00:02,533: - node_classifier - : epoch 54
-INFO:2025-03-03 20:00:02,585: - node_classifier - : Train: 0.8999, Test: 0.8376
-INFO:2025-03-03 20:00:02,585: - node_classifier - : epoch 55
-INFO:2025-03-03 20:00:02,640: - node_classifier - : Train: 0.8986, Test: 0.8598
-INFO:2025-03-03 20:00:02,640: - node_classifier - : epoch 56
-INFO:2025-03-03 20:00:02,693: - node_classifier - : Train: 0.9011, Test: 0.8561
-INFO:2025-03-03 20:00:02,693: - node_classifier - : epoch 57
-INFO:2025-03-03 20:00:02,743: - node_classifier - : Train: 0.8991, Test: 0.8450
-INFO:2025-03-03 20:00:02,743: - node_classifier - : epoch 58
-INFO:2025-03-03 20:00:02,795: - node_classifier - : Train: 0.8966, Test: 0.8413
-INFO:2025-03-03 20:00:02,796: - node_classifier - : epoch 59
-INFO:2025-03-03 20:00:02,851: - node_classifier - : Train: 0.8995, Test: 0.8487
-INFO:2025-03-03 20:00:02,851: - node_classifier - : epoch 60
-INFO:2025-03-03 20:00:02,909: - node_classifier - : Train: 0.8982, Test: 0.8487
-INFO:2025-03-03 20:00:02,909: - node_classifier - : epoch 61
-INFO:2025-03-03 20:00:02,965: - node_classifier - : Train: 0.8978, Test: 0.8339
-INFO:2025-03-03 20:00:02,966: - node_classifier - : epoch 62
-INFO:2025-03-03 20:00:03,020: - node_classifier - : Train: 0.8982, Test: 0.8561
-INFO:2025-03-03 20:00:03,021: - node_classifier - : epoch 63
-INFO:2025-03-03 20:00:03,078: - node_classifier - : Train: 0.8995, Test: 0.8561
-INFO:2025-03-03 20:00:03,079: - node_classifier - : epoch 64
-INFO:2025-03-03 20:00:03,135: - node_classifier - : Train: 0.8954, Test: 0.8487
-INFO:2025-03-03 20:00:03,135: - node_classifier - : epoch 65
-INFO:2025-03-03 20:00:03,191: - node_classifier - : Train: 0.8999, Test: 0.8303
-INFO:2025-03-03 20:00:03,192: - node_classifier - : epoch 66
-INFO:2025-03-03 20:00:03,245: - node_classifier - : Train: 0.8982, Test: 0.8561
-INFO:2025-03-03 20:00:03,246: - node_classifier - : epoch 67
-INFO:2025-03-03 20:00:03,297: - node_classifier - : Train: 0.9027, Test: 0.8561
-INFO:2025-03-03 20:00:03,298: - node_classifier - : epoch 68
-INFO:2025-03-03 20:00:03,352: - node_classifier - : Train: 0.8991, Test: 0.8524
-INFO:2025-03-03 20:00:03,352: - node_classifier - : epoch 69
-INFO:2025-03-03 20:00:03,409: - node_classifier - : Train: 0.9003, Test: 0.8487
-INFO:2025-03-03 20:00:03,409: - node_classifier - : epoch 70
-INFO:2025-03-03 20:00:03,464: - node_classifier - : Train: 0.9027, Test: 0.8524
-INFO:2025-03-03 20:00:03,465: - node_classifier - : epoch 71
-INFO:2025-03-03 20:00:03,518: - node_classifier - : Train: 0.8970, Test: 0.8487
-INFO:2025-03-03 20:00:03,519: - node_classifier - : epoch 72
-INFO:2025-03-03 20:00:03,580: - node_classifier - : Train: 0.9044, Test: 0.8339
-INFO:2025-03-03 20:00:03,580: - node_classifier - : epoch 73
-INFO:2025-03-03 20:00:03,637: - node_classifier - : Train: 0.9011, Test: 0.8413
-INFO:2025-03-03 20:00:03,638: - node_classifier - : epoch 74
-INFO:2025-03-03 20:00:03,695: - node_classifier - : Train: 0.8991, Test: 0.8450
-INFO:2025-03-03 20:00:03,695: - node_classifier - : epoch 75
-INFO:2025-03-03 20:00:03,752: - node_classifier - : Train: 0.8970, Test: 0.8303
-INFO:2025-03-03 20:00:03,752: - node_classifier - : epoch 76
-INFO:2025-03-03 20:00:03,808: - node_classifier - : Train: 0.8941, Test: 0.8487
-INFO:2025-03-03 20:00:03,808: - node_classifier - : epoch 77
-INFO:2025-03-03 20:00:03,867: - node_classifier - : Train: 0.8978, Test: 0.8413
-INFO:2025-03-03 20:00:03,868: - node_classifier - : epoch 78
-INFO:2025-03-03 20:00:03,926: - node_classifier - : Train: 0.8986, Test: 0.8598
-INFO:2025-03-03 20:00:03,926: - node_classifier - : epoch 79
-INFO:2025-03-03 20:00:03,984: - node_classifier - : Train: 0.8986, Test: 0.8524
-INFO:2025-03-03 20:00:03,984: - node_classifier - : epoch 80
-INFO:2025-03-03 20:00:04,041: - node_classifier - : Train: 0.9023, Test: 0.8487
-INFO:2025-03-03 20:00:04,042: - node_classifier - : epoch 81
-INFO:2025-03-03 20:00:04,099: - node_classifier - : Train: 0.8982, Test: 0.8598
-INFO:2025-03-03 20:00:04,100: - node_classifier - : epoch 82
-INFO:2025-03-03 20:00:04,157: - node_classifier - : Train: 0.9060, Test: 0.8450
-INFO:2025-03-03 20:00:04,158: - node_classifier - : epoch 83
-INFO:2025-03-03 20:00:04,212: - node_classifier - : Train: 0.8978, Test: 0.8339
-INFO:2025-03-03 20:00:04,213: - node_classifier - : epoch 84
-INFO:2025-03-03 20:00:04,271: - node_classifier - : Train: 0.9060, Test: 0.8413
-INFO:2025-03-03 20:00:04,272: - node_classifier - : epoch 85
-INFO:2025-03-03 20:00:04,329: - node_classifier - : Train: 0.9003, Test: 0.8598
-INFO:2025-03-03 20:00:04,329: - node_classifier - : epoch 86
-INFO:2025-03-03 20:00:04,384: - node_classifier - : Train: 0.9011, Test: 0.8413
-INFO:2025-03-03 20:00:04,384: - node_classifier - : epoch 87
-INFO:2025-03-03 20:00:04,442: - node_classifier - : Train: 0.9044, Test: 0.8561
-INFO:2025-03-03 20:00:04,443: - node_classifier - : epoch 88
-INFO:2025-03-03 20:00:04,503: - node_classifier - : Train: 0.9027, Test: 0.8487
-INFO:2025-03-03 20:00:04,503: - node_classifier - : epoch 89
-INFO:2025-03-03 20:00:04,563: - node_classifier - : Train: 0.9019, Test: 0.8524
-INFO:2025-03-03 20:00:04,564: - node_classifier - : epoch 90
-INFO:2025-03-03 20:00:04,625: - node_classifier - : Train: 0.8937, Test: 0.8266
-INFO:2025-03-03 20:00:04,625: - node_classifier - : epoch 91
-INFO:2025-03-03 20:00:04,684: - node_classifier - : Train: 0.9011, Test: 0.8450
-INFO:2025-03-03 20:00:04,684: - node_classifier - : epoch 92
-INFO:2025-03-03 20:00:04,744: - node_classifier - : Train: 0.8954, Test: 0.8376
-INFO:2025-03-03 20:00:04,744: - node_classifier - : epoch 93
-INFO:2025-03-03 20:00:04,803: - node_classifier - : Train: 0.9032, Test: 0.8266
-INFO:2025-03-03 20:00:04,803: - node_classifier - : epoch 94
-INFO:2025-03-03 20:00:04,857: - node_classifier - : Train: 0.9032, Test: 0.8413
-INFO:2025-03-03 20:00:04,857: - node_classifier - : epoch 95
-INFO:2025-03-03 20:00:04,911: - node_classifier - : Train: 0.8986, Test: 0.8339
-INFO:2025-03-03 20:00:04,912: - node_classifier - : epoch 96
-INFO:2025-03-03 20:00:04,969: - node_classifier - : Train: 0.9023, Test: 0.8376
-INFO:2025-03-03 20:00:04,970: - node_classifier - : epoch 97
-INFO:2025-03-03 20:00:05,024: - node_classifier - : Train: 0.8995, Test: 0.8487
-INFO:2025-03-03 20:00:05,025: - node_classifier - : epoch 98
-INFO:2025-03-03 20:00:05,082: - node_classifier - : Train: 0.9019, Test: 0.8339
-INFO:2025-03-03 20:00:05,083: - node_classifier - : epoch 99
-INFO:2025-03-03 20:00:05,141: - node_classifier - : Train: 0.9023, Test: 0.8339
-INFO:2025-03-03 20:00:05,153: - ExpGraphInfluenceFunction - : Model training time: 6.403311014175415
-INFO:2025-03-03 20:00:05,154: - ExpGraphInfluenceFunction - : model evaluation
-DEBUG:2025-03-03 20:00:05,154: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:05,200: - ExpGraphInfluenceFunction - : Evaluation cost 0.04600095748901367 seconds.
-INFO:2025-03-03 20:00:05,201: - ExpGraphInfluenceFunction - : Final Test F1: 0.8339483394833949
-INFO:2025-03-03 20:00:05,201: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8339483394833949
-INFO:2025-03-03 20:00:05,201: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8339483394833949
-INFO:2025-03-03 20:00:05,202: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8339483394833949
-DEBUG:2025-03-03 20:00:05,332: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:05,376: - ExpGraphInfluenceFunction - : Run 1.000000
-INFO:2025-03-03 20:00:05,377: - ExpGraphInfluenceFunction - : training target models, run 1
-INFO:2025-03-03 20:00:05,377: - node_classifier - : training model
-INFO:2025-03-03 20:00:05,377: - node_classifier - : generate train loader
-INFO:2025-03-03 20:00:05,379: - node_classifier - : generate train loader finish
-INFO:2025-03-03 20:00:05,379: - node_classifier - : epoch 0
-INFO:2025-03-03 20:00:05,434: - node_classifier - : Train: 0.4276, Test: 0.4133
-INFO:2025-03-03 20:00:05,434: - node_classifier - : epoch 1
-INFO:2025-03-03 20:00:05,489: - node_classifier - : Train: 0.4518, Test: 0.4317
-INFO:2025-03-03 20:00:05,490: - node_classifier - : epoch 2
-INFO:2025-03-03 20:00:05,545: - node_classifier - : Train: 0.5835, Test: 0.5646
-INFO:2025-03-03 20:00:05,545: - node_classifier - : epoch 3
-INFO:2025-03-03 20:00:05,599: - node_classifier - : Train: 0.7673, Test: 0.7897
-INFO:2025-03-03 20:00:05,599: - node_classifier - : epoch 4
-INFO:2025-03-03 20:00:05,653: - node_classifier - : Train: 0.8211, Test: 0.8266
-INFO:2025-03-03 20:00:05,653: - node_classifier - : epoch 5
-INFO:2025-03-03 20:00:05,711: - node_classifier - : Train: 0.8465, Test: 0.8450
-INFO:2025-03-03 20:00:05,711: - node_classifier - : epoch 6
-INFO:2025-03-03 20:00:05,767: - node_classifier - : Train: 0.8560, Test: 0.8450
-INFO:2025-03-03 20:00:05,768: - node_classifier - : epoch 7
-INFO:2025-03-03 20:00:05,824: - node_classifier - : Train: 0.8646, Test: 0.8487
-INFO:2025-03-03 20:00:05,825: - node_classifier - : epoch 8
-INFO:2025-03-03 20:00:05,884: - node_classifier - : Train: 0.8695, Test: 0.8376
-INFO:2025-03-03 20:00:05,884: - node_classifier - : epoch 9
-INFO:2025-03-03 20:00:05,939: - node_classifier - : Train: 0.8670, Test: 0.8413
-INFO:2025-03-03 20:00:05,940: - node_classifier - : epoch 10
-INFO:2025-03-03 20:00:05,995: - node_classifier - : Train: 0.8736, Test: 0.8266
-INFO:2025-03-03 20:00:05,995: - node_classifier - : epoch 11
-INFO:2025-03-03 20:00:06,070: - node_classifier - : Train: 0.8736, Test: 0.8155
-INFO:2025-03-03 20:00:06,071: - node_classifier - : epoch 12
-INFO:2025-03-03 20:00:06,134: - node_classifier - : Train: 0.8765, Test: 0.8561
-INFO:2025-03-03 20:00:06,134: - node_classifier - : epoch 13
-INFO:2025-03-03 20:00:06,190: - node_classifier - : Train: 0.8794, Test: 0.8450
-INFO:2025-03-03 20:00:06,191: - node_classifier - : epoch 14
-INFO:2025-03-03 20:00:06,245: - node_classifier - : Train: 0.8785, Test: 0.8229
-INFO:2025-03-03 20:00:06,246: - node_classifier - : epoch 15
-INFO:2025-03-03 20:00:06,300: - node_classifier - : Train: 0.8773, Test: 0.8487
-INFO:2025-03-03 20:00:06,301: - node_classifier - : epoch 16
-INFO:2025-03-03 20:00:06,354: - node_classifier - : Train: 0.8822, Test: 0.8413
-INFO:2025-03-03 20:00:06,354: - node_classifier - : epoch 17
-INFO:2025-03-03 20:00:06,408: - node_classifier - : Train: 0.8876, Test: 0.8266
-INFO:2025-03-03 20:00:06,408: - node_classifier - : epoch 18
-INFO:2025-03-03 20:00:06,461: - node_classifier - : Train: 0.8789, Test: 0.8303
-INFO:2025-03-03 20:00:06,461: - node_classifier - : epoch 19
-INFO:2025-03-03 20:00:06,517: - node_classifier - : Train: 0.8867, Test: 0.8450
-INFO:2025-03-03 20:00:06,518: - node_classifier - : epoch 20
-INFO:2025-03-03 20:00:06,571: - node_classifier - : Train: 0.8863, Test: 0.8339
-INFO:2025-03-03 20:00:06,572: - node_classifier - : epoch 21
-INFO:2025-03-03 20:00:06,625: - node_classifier - : Train: 0.8839, Test: 0.8303
-INFO:2025-03-03 20:00:06,626: - node_classifier - : epoch 22
-INFO:2025-03-03 20:00:06,678: - node_classifier - : Train: 0.8872, Test: 0.8339
-INFO:2025-03-03 20:00:06,679: - node_classifier - : epoch 23
-INFO:2025-03-03 20:00:06,732: - node_classifier - : Train: 0.8888, Test: 0.8376
-INFO:2025-03-03 20:00:06,732: - node_classifier - : epoch 24
-INFO:2025-03-03 20:00:06,784: - node_classifier - : Train: 0.8892, Test: 0.8303
-INFO:2025-03-03 20:00:06,785: - node_classifier - : epoch 25
-INFO:2025-03-03 20:00:06,837: - node_classifier - : Train: 0.8896, Test: 0.8339
-INFO:2025-03-03 20:00:06,838: - node_classifier - : epoch 26
-INFO:2025-03-03 20:00:06,888: - node_classifier - : Train: 0.8855, Test: 0.8339
-INFO:2025-03-03 20:00:06,889: - node_classifier - : epoch 27
-INFO:2025-03-03 20:00:06,940: - node_classifier - : Train: 0.8913, Test: 0.8303
-INFO:2025-03-03 20:00:06,941: - node_classifier - : epoch 28
-INFO:2025-03-03 20:00:06,991: - node_classifier - : Train: 0.8884, Test: 0.8339
-INFO:2025-03-03 20:00:06,991: - node_classifier - : epoch 29
-INFO:2025-03-03 20:00:07,042: - node_classifier - : Train: 0.8929, Test: 0.8413
-INFO:2025-03-03 20:00:07,043: - node_classifier - : epoch 30
-INFO:2025-03-03 20:00:07,096: - node_classifier - : Train: 0.8925, Test: 0.8266
-INFO:2025-03-03 20:00:07,096: - node_classifier - : epoch 31
-INFO:2025-03-03 20:00:07,151: - node_classifier - : Train: 0.8974, Test: 0.8339
-INFO:2025-03-03 20:00:07,151: - node_classifier - : epoch 32
-INFO:2025-03-03 20:00:07,206: - node_classifier - : Train: 0.8974, Test: 0.8413
-INFO:2025-03-03 20:00:07,206: - node_classifier - : epoch 33
-INFO:2025-03-03 20:00:07,263: - node_classifier - : Train: 0.8966, Test: 0.8524
-INFO:2025-03-03 20:00:07,263: - node_classifier - : epoch 34
-INFO:2025-03-03 20:00:07,317: - node_classifier - : Train: 0.8970, Test: 0.8450
-INFO:2025-03-03 20:00:07,318: - node_classifier - : epoch 35
-INFO:2025-03-03 20:00:07,374: - node_classifier - : Train: 0.8945, Test: 0.8487
-INFO:2025-03-03 20:00:07,374: - node_classifier - : epoch 36
-INFO:2025-03-03 20:00:07,430: - node_classifier - : Train: 0.8950, Test: 0.8450
-INFO:2025-03-03 20:00:07,430: - node_classifier - : epoch 37
-INFO:2025-03-03 20:00:07,487: - node_classifier - : Train: 0.8962, Test: 0.8339
-INFO:2025-03-03 20:00:07,488: - node_classifier - : epoch 38
-INFO:2025-03-03 20:00:07,548: - node_classifier - : Train: 0.9019, Test: 0.8376
-INFO:2025-03-03 20:00:07,548: - node_classifier - : epoch 39
-INFO:2025-03-03 20:00:07,608: - node_classifier - : Train: 0.8966, Test: 0.8339
-INFO:2025-03-03 20:00:07,608: - node_classifier - : epoch 40
-INFO:2025-03-03 20:00:07,670: - node_classifier - : Train: 0.8859, Test: 0.8413
-INFO:2025-03-03 20:00:07,671: - node_classifier - : epoch 41
-INFO:2025-03-03 20:00:07,732: - node_classifier - : Train: 0.8982, Test: 0.8303
-INFO:2025-03-03 20:00:07,732: - node_classifier - : epoch 42
-INFO:2025-03-03 20:00:07,795: - node_classifier - : Train: 0.8974, Test: 0.8524
-INFO:2025-03-03 20:00:07,795: - node_classifier - : epoch 43
-INFO:2025-03-03 20:00:07,857: - node_classifier - : Train: 0.8900, Test: 0.8376
-INFO:2025-03-03 20:00:07,857: - node_classifier - : epoch 44
-INFO:2025-03-03 20:00:07,919: - node_classifier - : Train: 0.8950, Test: 0.8229
-INFO:2025-03-03 20:00:07,920: - node_classifier - : epoch 45
-INFO:2025-03-03 20:00:07,975: - node_classifier - : Train: 0.8974, Test: 0.8450
-INFO:2025-03-03 20:00:07,976: - node_classifier - : epoch 46
-INFO:2025-03-03 20:00:08,034: - node_classifier - : Train: 0.8929, Test: 0.8524
-INFO:2025-03-03 20:00:08,034: - node_classifier - : epoch 47
-INFO:2025-03-03 20:00:08,096: - node_classifier - : Train: 0.8978, Test: 0.8450
-INFO:2025-03-03 20:00:08,096: - node_classifier - : epoch 48
-INFO:2025-03-03 20:00:08,157: - node_classifier - : Train: 0.8937, Test: 0.8413
-INFO:2025-03-03 20:00:08,157: - node_classifier - : epoch 49
-INFO:2025-03-03 20:00:08,218: - node_classifier - : Train: 0.8991, Test: 0.8303
-INFO:2025-03-03 20:00:08,218: - node_classifier - : epoch 50
-INFO:2025-03-03 20:00:08,281: - node_classifier - : Train: 0.8991, Test: 0.8524
-INFO:2025-03-03 20:00:08,281: - node_classifier - : epoch 51
-INFO:2025-03-03 20:00:08,344: - node_classifier - : Train: 0.8945, Test: 0.8413
-INFO:2025-03-03 20:00:08,344: - node_classifier - : epoch 52
-INFO:2025-03-03 20:00:08,401: - node_classifier - : Train: 0.8991, Test: 0.8266
-INFO:2025-03-03 20:00:08,402: - node_classifier - : epoch 53
-INFO:2025-03-03 20:00:08,459: - node_classifier - : Train: 0.8954, Test: 0.8376
-INFO:2025-03-03 20:00:08,460: - node_classifier - : epoch 54
-INFO:2025-03-03 20:00:08,517: - node_classifier - : Train: 0.8966, Test: 0.8339
-INFO:2025-03-03 20:00:08,517: - node_classifier - : epoch 55
-INFO:2025-03-03 20:00:08,576: - node_classifier - : Train: 0.8974, Test: 0.8303
-INFO:2025-03-03 20:00:08,576: - node_classifier - : epoch 56
-INFO:2025-03-03 20:00:08,635: - node_classifier - : Train: 0.8986, Test: 0.8487
-INFO:2025-03-03 20:00:08,636: - node_classifier - : epoch 57
-INFO:2025-03-03 20:00:08,692: - node_classifier - : Train: 0.9003, Test: 0.8450
-INFO:2025-03-03 20:00:08,693: - node_classifier - : epoch 58
-INFO:2025-03-03 20:00:08,753: - node_classifier - : Train: 0.9015, Test: 0.8450
-INFO:2025-03-03 20:00:08,754: - node_classifier - : epoch 59
-INFO:2025-03-03 20:00:08,810: - node_classifier - : Train: 0.9007, Test: 0.8413
-INFO:2025-03-03 20:00:08,811: - node_classifier - : epoch 60
-INFO:2025-03-03 20:00:08,867: - node_classifier - : Train: 0.9023, Test: 0.8524
-INFO:2025-03-03 20:00:08,868: - node_classifier - : epoch 61
-INFO:2025-03-03 20:00:08,925: - node_classifier - : Train: 0.9069, Test: 0.8708
-INFO:2025-03-03 20:00:08,925: - node_classifier - : epoch 62
-INFO:2025-03-03 20:00:08,981: - node_classifier - : Train: 0.8950, Test: 0.8376
-INFO:2025-03-03 20:00:08,981: - node_classifier - : epoch 63
-INFO:2025-03-03 20:00:09,037: - node_classifier - : Train: 0.8958, Test: 0.8266
-INFO:2025-03-03 20:00:09,038: - node_classifier - : epoch 64
-INFO:2025-03-03 20:00:09,096: - node_classifier - : Train: 0.8986, Test: 0.8487
-INFO:2025-03-03 20:00:09,096: - node_classifier - : epoch 65
-INFO:2025-03-03 20:00:09,158: - node_classifier - : Train: 0.8941, Test: 0.8413
-INFO:2025-03-03 20:00:09,158: - node_classifier - : epoch 66
-INFO:2025-03-03 20:00:09,216: - node_classifier - : Train: 0.9007, Test: 0.8413
-INFO:2025-03-03 20:00:09,217: - node_classifier - : epoch 67
-INFO:2025-03-03 20:00:09,274: - node_classifier - : Train: 0.8925, Test: 0.8155
-INFO:2025-03-03 20:00:09,274: - node_classifier - : epoch 68
-INFO:2025-03-03 20:00:09,332: - node_classifier - : Train: 0.9056, Test: 0.8450
-INFO:2025-03-03 20:00:09,332: - node_classifier - : epoch 69
-INFO:2025-03-03 20:00:09,390: - node_classifier - : Train: 0.8986, Test: 0.8524
-INFO:2025-03-03 20:00:09,390: - node_classifier - : epoch 70
-INFO:2025-03-03 20:00:09,455: - node_classifier - : Train: 0.8978, Test: 0.8376
-INFO:2025-03-03 20:00:09,455: - node_classifier - : epoch 71
-INFO:2025-03-03 20:00:09,517: - node_classifier - : Train: 0.8982, Test: 0.8339
-INFO:2025-03-03 20:00:09,518: - node_classifier - : epoch 72
-INFO:2025-03-03 20:00:09,580: - node_classifier - : Train: 0.8929, Test: 0.8450
-INFO:2025-03-03 20:00:09,581: - node_classifier - : epoch 73
-INFO:2025-03-03 20:00:09,645: - node_classifier - : Train: 0.9027, Test: 0.8450
-INFO:2025-03-03 20:00:09,645: - node_classifier - : epoch 74
-INFO:2025-03-03 20:00:09,708: - node_classifier - : Train: 0.8962, Test: 0.8561
-INFO:2025-03-03 20:00:09,708: - node_classifier - : epoch 75
-INFO:2025-03-03 20:00:09,771: - node_classifier - : Train: 0.9089, Test: 0.8339
-INFO:2025-03-03 20:00:09,771: - node_classifier - : epoch 76
-INFO:2025-03-03 20:00:09,834: - node_classifier - : Train: 0.9048, Test: 0.8413
-INFO:2025-03-03 20:00:09,835: - node_classifier - : epoch 77
-INFO:2025-03-03 20:00:09,895: - node_classifier - : Train: 0.9011, Test: 0.8376
-INFO:2025-03-03 20:00:09,896: - node_classifier - : epoch 78
-INFO:2025-03-03 20:00:09,958: - node_classifier - : Train: 0.8995, Test: 0.8339
-INFO:2025-03-03 20:00:09,958: - node_classifier - : epoch 79
-INFO:2025-03-03 20:00:10,021: - node_classifier - : Train: 0.9007, Test: 0.8450
-INFO:2025-03-03 20:00:10,021: - node_classifier - : epoch 80
-INFO:2025-03-03 20:00:10,084: - node_classifier - : Train: 0.9023, Test: 0.8598
-INFO:2025-03-03 20:00:10,084: - node_classifier - : epoch 81
-INFO:2025-03-03 20:00:10,146: - node_classifier - : Train: 0.9040, Test: 0.8376
-INFO:2025-03-03 20:00:10,147: - node_classifier - : epoch 82
-INFO:2025-03-03 20:00:10,210: - node_classifier - : Train: 0.8974, Test: 0.8376
-INFO:2025-03-03 20:00:10,211: - node_classifier - : epoch 83
-INFO:2025-03-03 20:00:10,271: - node_classifier - : Train: 0.9019, Test: 0.8339
-INFO:2025-03-03 20:00:10,272: - node_classifier - : epoch 84
-INFO:2025-03-03 20:00:10,337: - node_classifier - : Train: 0.8999, Test: 0.8487
-INFO:2025-03-03 20:00:10,338: - node_classifier - : epoch 85
-INFO:2025-03-03 20:00:10,399: - node_classifier - : Train: 0.9015, Test: 0.8524
-INFO:2025-03-03 20:00:10,399: - node_classifier - : epoch 86
-INFO:2025-03-03 20:00:10,461: - node_classifier - : Train: 0.8982, Test: 0.8413
-INFO:2025-03-03 20:00:10,461: - node_classifier - : epoch 87
-INFO:2025-03-03 20:00:10,523: - node_classifier - : Train: 0.9040, Test: 0.8487
-INFO:2025-03-03 20:00:10,524: - node_classifier - : epoch 88
-INFO:2025-03-03 20:00:10,587: - node_classifier - : Train: 0.9040, Test: 0.8524
-INFO:2025-03-03 20:00:10,588: - node_classifier - : epoch 89
-INFO:2025-03-03 20:00:10,652: - node_classifier - : Train: 0.8986, Test: 0.8450
-INFO:2025-03-03 20:00:10,652: - node_classifier - : epoch 90
-INFO:2025-03-03 20:00:10,717: - node_classifier - : Train: 0.9015, Test: 0.8376
-INFO:2025-03-03 20:00:10,717: - node_classifier - : epoch 91
-INFO:2025-03-03 20:00:10,778: - node_classifier - : Train: 0.9040, Test: 0.8524
-INFO:2025-03-03 20:00:10,778: - node_classifier - : epoch 92
-INFO:2025-03-03 20:00:10,839: - node_classifier - : Train: 0.9019, Test: 0.8339
-INFO:2025-03-03 20:00:10,839: - node_classifier - : epoch 93
-INFO:2025-03-03 20:00:10,900: - node_classifier - : Train: 0.9027, Test: 0.8376
-INFO:2025-03-03 20:00:10,900: - node_classifier - : epoch 94
-INFO:2025-03-03 20:00:10,957: - node_classifier - : Train: 0.8991, Test: 0.8487
-INFO:2025-03-03 20:00:10,958: - node_classifier - : epoch 95
-INFO:2025-03-03 20:00:11,017: - node_classifier - : Train: 0.9056, Test: 0.8376
-INFO:2025-03-03 20:00:11,018: - node_classifier - : epoch 96
-INFO:2025-03-03 20:00:11,081: - node_classifier - : Train: 0.9011, Test: 0.8192
-INFO:2025-03-03 20:00:11,081: - node_classifier - : epoch 97
-INFO:2025-03-03 20:00:11,144: - node_classifier - : Train: 0.8986, Test: 0.8413
-INFO:2025-03-03 20:00:11,144: - node_classifier - : epoch 98
-INFO:2025-03-03 20:00:11,205: - node_classifier - : Train: 0.9036, Test: 0.8413
-INFO:2025-03-03 20:00:11,206: - node_classifier - : epoch 99
-INFO:2025-03-03 20:00:11,267: - node_classifier - : Train: 0.8929, Test: 0.8339
-INFO:2025-03-03 20:00:11,277: - ExpGraphInfluenceFunction - : Model training time: 5.899993896484375
-INFO:2025-03-03 20:00:11,277: - ExpGraphInfluenceFunction - : model evaluation
-DEBUG:2025-03-03 20:00:11,277: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:11,325: - ExpGraphInfluenceFunction - : Evaluation cost 0.04759335517883301 seconds.
-INFO:2025-03-03 20:00:11,325: - ExpGraphInfluenceFunction - : Final Test F1: 0.8339483394833949
-INFO:2025-03-03 20:00:11,325: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8339483394833949
-INFO:2025-03-03 20:00:11,326: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8339483394833949
-INFO:2025-03-03 20:00:11,326: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8339483394833949
-DEBUG:2025-03-03 20:00:11,471: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:11,514: - ExpGraphInfluenceFunction - : Run 2.000000
-INFO:2025-03-03 20:00:11,515: - ExpGraphInfluenceFunction - : training target models, run 2
-INFO:2025-03-03 20:00:11,515: - node_classifier - : training model
-INFO:2025-03-03 20:00:11,515: - node_classifier - : generate train loader
-INFO:2025-03-03 20:00:11,519: - node_classifier - : generate train loader finish
-INFO:2025-03-03 20:00:11,519: - node_classifier - : epoch 0
-INFO:2025-03-03 20:00:11,575: - node_classifier - : Train: 0.3090, Test: 0.3137
-INFO:2025-03-03 20:00:11,576: - node_classifier - : epoch 1
-INFO:2025-03-03 20:00:11,633: - node_classifier - : Train: 0.3853, Test: 0.3764
-INFO:2025-03-03 20:00:11,634: - node_classifier - : epoch 2
-INFO:2025-03-03 20:00:11,692: - node_classifier - : Train: 0.5773, Test: 0.5609
-INFO:2025-03-03 20:00:11,692: - node_classifier - : epoch 3
-INFO:2025-03-03 20:00:11,748: - node_classifier - : Train: 0.7226, Test: 0.7232
-INFO:2025-03-03 20:00:11,749: - node_classifier - : epoch 4
-INFO:2025-03-03 20:00:11,805: - node_classifier - : Train: 0.7727, Test: 0.7897
-INFO:2025-03-03 20:00:11,805: - node_classifier - : epoch 5
-INFO:2025-03-03 20:00:11,859: - node_classifier - : Train: 0.8125, Test: 0.8376
-INFO:2025-03-03 20:00:11,860: - node_classifier - : epoch 6
-INFO:2025-03-03 20:00:11,913: - node_classifier - : Train: 0.8338, Test: 0.8376
-INFO:2025-03-03 20:00:11,913: - node_classifier - : epoch 7
-INFO:2025-03-03 20:00:11,966: - node_classifier - : Train: 0.8482, Test: 0.8303
-INFO:2025-03-03 20:00:11,966: - node_classifier - : epoch 8
-INFO:2025-03-03 20:00:12,019: - node_classifier - : Train: 0.8609, Test: 0.8303
-INFO:2025-03-03 20:00:12,019: - node_classifier - : epoch 9
-INFO:2025-03-03 20:00:12,072: - node_classifier - : Train: 0.8605, Test: 0.8339
-INFO:2025-03-03 20:00:12,072: - node_classifier - : epoch 10
-INFO:2025-03-03 20:00:12,125: - node_classifier - : Train: 0.8629, Test: 0.8266
-INFO:2025-03-03 20:00:12,125: - node_classifier - : epoch 11
-INFO:2025-03-03 20:00:12,181: - node_classifier - : Train: 0.8666, Test: 0.8303
-INFO:2025-03-03 20:00:12,181: - node_classifier - : epoch 12
-INFO:2025-03-03 20:00:12,236: - node_classifier - : Train: 0.8658, Test: 0.8450
-INFO:2025-03-03 20:00:12,237: - node_classifier - : epoch 13
-INFO:2025-03-03 20:00:12,319: - node_classifier - : Train: 0.8703, Test: 0.8192
-INFO:2025-03-03 20:00:12,320: - node_classifier - : epoch 14
-INFO:2025-03-03 20:00:12,374: - node_classifier - : Train: 0.8687, Test: 0.8303
-INFO:2025-03-03 20:00:12,375: - node_classifier - : epoch 15
-INFO:2025-03-03 20:00:12,434: - node_classifier - : Train: 0.8744, Test: 0.8303
-INFO:2025-03-03 20:00:12,434: - node_classifier - : epoch 16
-INFO:2025-03-03 20:00:12,492: - node_classifier - : Train: 0.8806, Test: 0.8229
-INFO:2025-03-03 20:00:12,492: - node_classifier - : epoch 17
-INFO:2025-03-03 20:00:12,549: - node_classifier - : Train: 0.8773, Test: 0.8339
-INFO:2025-03-03 20:00:12,549: - node_classifier - : epoch 18
-INFO:2025-03-03 20:00:12,607: - node_classifier - : Train: 0.8826, Test: 0.8266
-INFO:2025-03-03 20:00:12,607: - node_classifier - : epoch 19
-INFO:2025-03-03 20:00:12,664: - node_classifier - : Train: 0.8826, Test: 0.8229
-INFO:2025-03-03 20:00:12,665: - node_classifier - : epoch 20
-INFO:2025-03-03 20:00:12,719: - node_classifier - : Train: 0.8765, Test: 0.8303
-INFO:2025-03-03 20:00:12,719: - node_classifier - : epoch 21
-INFO:2025-03-03 20:00:12,775: - node_classifier - : Train: 0.8831, Test: 0.8192
-INFO:2025-03-03 20:00:12,776: - node_classifier - : epoch 22
-INFO:2025-03-03 20:00:12,831: - node_classifier - : Train: 0.8822, Test: 0.8229
-INFO:2025-03-03 20:00:12,831: - node_classifier - : epoch 23
-INFO:2025-03-03 20:00:12,883: - node_classifier - : Train: 0.8831, Test: 0.8413
-INFO:2025-03-03 20:00:12,884: - node_classifier - : epoch 24
-INFO:2025-03-03 20:00:12,937: - node_classifier - : Train: 0.8884, Test: 0.8303
-INFO:2025-03-03 20:00:12,937: - node_classifier - : epoch 25
-INFO:2025-03-03 20:00:12,990: - node_classifier - : Train: 0.8880, Test: 0.8376
-INFO:2025-03-03 20:00:12,991: - node_classifier - : epoch 26
-INFO:2025-03-03 20:00:13,043: - node_classifier - : Train: 0.8896, Test: 0.8450
-INFO:2025-03-03 20:00:13,043: - node_classifier - : epoch 27
-INFO:2025-03-03 20:00:13,096: - node_classifier - : Train: 0.8867, Test: 0.8524
-INFO:2025-03-03 20:00:13,096: - node_classifier - : epoch 28
-INFO:2025-03-03 20:00:13,149: - node_classifier - : Train: 0.8896, Test: 0.8487
-INFO:2025-03-03 20:00:13,149: - node_classifier - : epoch 29
-INFO:2025-03-03 20:00:13,201: - node_classifier - : Train: 0.8925, Test: 0.8303
-INFO:2025-03-03 20:00:13,202: - node_classifier - : epoch 30
-INFO:2025-03-03 20:00:13,256: - node_classifier - : Train: 0.8872, Test: 0.8450
-INFO:2025-03-03 20:00:13,257: - node_classifier - : epoch 31
-INFO:2025-03-03 20:00:13,310: - node_classifier - : Train: 0.8950, Test: 0.8339
-INFO:2025-03-03 20:00:13,310: - node_classifier - : epoch 32
-INFO:2025-03-03 20:00:13,364: - node_classifier - : Train: 0.8937, Test: 0.8155
-INFO:2025-03-03 20:00:13,365: - node_classifier - : epoch 33
-INFO:2025-03-03 20:00:13,420: - node_classifier - : Train: 0.8908, Test: 0.8339
-INFO:2025-03-03 20:00:13,420: - node_classifier - : epoch 34
-INFO:2025-03-03 20:00:13,475: - node_classifier - : Train: 0.8991, Test: 0.8524
-INFO:2025-03-03 20:00:13,476: - node_classifier - : epoch 35
-INFO:2025-03-03 20:00:13,529: - node_classifier - : Train: 0.8950, Test: 0.8339
-INFO:2025-03-03 20:00:13,529: - node_classifier - : epoch 36
-INFO:2025-03-03 20:00:13,584: - node_classifier - : Train: 0.8908, Test: 0.8376
-INFO:2025-03-03 20:00:13,584: - node_classifier - : epoch 37
-INFO:2025-03-03 20:00:13,640: - node_classifier - : Train: 0.8933, Test: 0.8376
-INFO:2025-03-03 20:00:13,641: - node_classifier - : epoch 38
-INFO:2025-03-03 20:00:13,696: - node_classifier - : Train: 0.8925, Test: 0.8266
-INFO:2025-03-03 20:00:13,697: - node_classifier - : epoch 39
-INFO:2025-03-03 20:00:13,751: - node_classifier - : Train: 0.8925, Test: 0.8376
-INFO:2025-03-03 20:00:13,751: - node_classifier - : epoch 40
-INFO:2025-03-03 20:00:13,806: - node_classifier - : Train: 0.8958, Test: 0.8524
-INFO:2025-03-03 20:00:13,806: - node_classifier - : epoch 41
-INFO:2025-03-03 20:00:13,861: - node_classifier - : Train: 0.8970, Test: 0.8376
-INFO:2025-03-03 20:00:13,861: - node_classifier - : epoch 42
-INFO:2025-03-03 20:00:13,917: - node_classifier - : Train: 0.8925, Test: 0.8339
-INFO:2025-03-03 20:00:13,917: - node_classifier - : epoch 43
-INFO:2025-03-03 20:00:13,972: - node_classifier - : Train: 0.8941, Test: 0.8413
-INFO:2025-03-03 20:00:13,973: - node_classifier - : epoch 44
-INFO:2025-03-03 20:00:14,030: - node_classifier - : Train: 0.9019, Test: 0.8487
-INFO:2025-03-03 20:00:14,030: - node_classifier - : epoch 45
-INFO:2025-03-03 20:00:14,085: - node_classifier - : Train: 0.8970, Test: 0.8303
-INFO:2025-03-03 20:00:14,086: - node_classifier - : epoch 46
-INFO:2025-03-03 20:00:14,142: - node_classifier - : Train: 0.8937, Test: 0.8303
-INFO:2025-03-03 20:00:14,143: - node_classifier - : epoch 47
-INFO:2025-03-03 20:00:14,203: - node_classifier - : Train: 0.8941, Test: 0.8376
-INFO:2025-03-03 20:00:14,204: - node_classifier - : epoch 48
-INFO:2025-03-03 20:00:14,264: - node_classifier - : Train: 0.8945, Test: 0.8487
-INFO:2025-03-03 20:00:14,264: - node_classifier - : epoch 49
-INFO:2025-03-03 20:00:14,325: - node_classifier - : Train: 0.8933, Test: 0.8450
-INFO:2025-03-03 20:00:14,326: - node_classifier - : epoch 50
-INFO:2025-03-03 20:00:14,390: - node_classifier - : Train: 0.8974, Test: 0.8561
-INFO:2025-03-03 20:00:14,390: - node_classifier - : epoch 51
-INFO:2025-03-03 20:00:14,454: - node_classifier - : Train: 0.8991, Test: 0.8413
-INFO:2025-03-03 20:00:14,454: - node_classifier - : epoch 52
-INFO:2025-03-03 20:00:14,513: - node_classifier - : Train: 0.8945, Test: 0.8450
-INFO:2025-03-03 20:00:14,514: - node_classifier - : epoch 53
-INFO:2025-03-03 20:00:14,571: - node_classifier - : Train: 0.8950, Test: 0.8450
-INFO:2025-03-03 20:00:14,571: - node_classifier - : epoch 54
-INFO:2025-03-03 20:00:14,629: - node_classifier - : Train: 0.8917, Test: 0.8376
-INFO:2025-03-03 20:00:14,629: - node_classifier - : epoch 55
-INFO:2025-03-03 20:00:14,690: - node_classifier - : Train: 0.8933, Test: 0.8524
-INFO:2025-03-03 20:00:14,691: - node_classifier - : epoch 56
-INFO:2025-03-03 20:00:14,752: - node_classifier - : Train: 0.8937, Test: 0.8413
-INFO:2025-03-03 20:00:14,752: - node_classifier - : epoch 57
-INFO:2025-03-03 20:00:14,814: - node_classifier - : Train: 0.8995, Test: 0.8376
-INFO:2025-03-03 20:00:14,815: - node_classifier - : epoch 58
-INFO:2025-03-03 20:00:14,879: - node_classifier - : Train: 0.8995, Test: 0.8303
-INFO:2025-03-03 20:00:14,879: - node_classifier - : epoch 59
-INFO:2025-03-03 20:00:14,938: - node_classifier - : Train: 0.8900, Test: 0.8487
-INFO:2025-03-03 20:00:14,939: - node_classifier - : epoch 60
-INFO:2025-03-03 20:00:14,995: - node_classifier - : Train: 0.8925, Test: 0.8524
-INFO:2025-03-03 20:00:14,996: - node_classifier - : epoch 61
-INFO:2025-03-03 20:00:15,051: - node_classifier - : Train: 0.8962, Test: 0.8524
-INFO:2025-03-03 20:00:15,052: - node_classifier - : epoch 62
-INFO:2025-03-03 20:00:15,107: - node_classifier - : Train: 0.8921, Test: 0.8635
-INFO:2025-03-03 20:00:15,108: - node_classifier - : epoch 63
-INFO:2025-03-03 20:00:15,164: - node_classifier - : Train: 0.8999, Test: 0.8487
-INFO:2025-03-03 20:00:15,164: - node_classifier - : epoch 64
-INFO:2025-03-03 20:00:15,222: - node_classifier - : Train: 0.8941, Test: 0.8487
-INFO:2025-03-03 20:00:15,223: - node_classifier - : epoch 65
-INFO:2025-03-03 20:00:15,279: - node_classifier - : Train: 0.8982, Test: 0.8413
-INFO:2025-03-03 20:00:15,280: - node_classifier - : epoch 66
-INFO:2025-03-03 20:00:15,343: - node_classifier - : Train: 0.8970, Test: 0.8376
-INFO:2025-03-03 20:00:15,343: - node_classifier - : epoch 67
-INFO:2025-03-03 20:00:15,400: - node_classifier - : Train: 0.8929, Test: 0.8339
-INFO:2025-03-03 20:00:15,400: - node_classifier - : epoch 68
-INFO:2025-03-03 20:00:15,459: - node_classifier - : Train: 0.9023, Test: 0.8450
-INFO:2025-03-03 20:00:15,459: - node_classifier - : epoch 69
-INFO:2025-03-03 20:00:15,515: - node_classifier - : Train: 0.8974, Test: 0.8339
-INFO:2025-03-03 20:00:15,516: - node_classifier - : epoch 70
-INFO:2025-03-03 20:00:15,577: - node_classifier - : Train: 0.8974, Test: 0.8376
-INFO:2025-03-03 20:00:15,577: - node_classifier - : epoch 71
-INFO:2025-03-03 20:00:15,635: - node_classifier - : Train: 0.9019, Test: 0.8413
-INFO:2025-03-03 20:00:15,636: - node_classifier - : epoch 72
-INFO:2025-03-03 20:00:15,693: - node_classifier - : Train: 0.8945, Test: 0.8376
-INFO:2025-03-03 20:00:15,694: - node_classifier - : epoch 73
-INFO:2025-03-03 20:00:15,757: - node_classifier - : Train: 0.8982, Test: 0.8303
-INFO:2025-03-03 20:00:15,757: - node_classifier - : epoch 74
-INFO:2025-03-03 20:00:15,815: - node_classifier - : Train: 0.8962, Test: 0.8155
-INFO:2025-03-03 20:00:15,815: - node_classifier - : epoch 75
-INFO:2025-03-03 20:00:15,874: - node_classifier - : Train: 0.9015, Test: 0.8487
-INFO:2025-03-03 20:00:15,874: - node_classifier - : epoch 76
-INFO:2025-03-03 20:00:15,933: - node_classifier - : Train: 0.8991, Test: 0.8413
-INFO:2025-03-03 20:00:15,934: - node_classifier - : epoch 77
-INFO:2025-03-03 20:00:16,000: - node_classifier - : Train: 0.8962, Test: 0.8376
-INFO:2025-03-03 20:00:16,000: - node_classifier - : epoch 78
-INFO:2025-03-03 20:00:16,062: - node_classifier - : Train: 0.9040, Test: 0.8487
-INFO:2025-03-03 20:00:16,062: - node_classifier - : epoch 79
-INFO:2025-03-03 20:00:16,124: - node_classifier - : Train: 0.9048, Test: 0.8450
-INFO:2025-03-03 20:00:16,124: - node_classifier - : epoch 80
-INFO:2025-03-03 20:00:16,188: - node_classifier - : Train: 0.9027, Test: 0.8413
-INFO:2025-03-03 20:00:16,189: - node_classifier - : epoch 81
-INFO:2025-03-03 20:00:16,251: - node_classifier - : Train: 0.8991, Test: 0.8487
-INFO:2025-03-03 20:00:16,251: - node_classifier - : epoch 82
-INFO:2025-03-03 20:00:16,314: - node_classifier - : Train: 0.8982, Test: 0.8487
-INFO:2025-03-03 20:00:16,314: - node_classifier - : epoch 83
-INFO:2025-03-03 20:00:16,377: - node_classifier - : Train: 0.8950, Test: 0.8450
-INFO:2025-03-03 20:00:16,377: - node_classifier - : epoch 84
-INFO:2025-03-03 20:00:16,440: - node_classifier - : Train: 0.9015, Test: 0.8524
-INFO:2025-03-03 20:00:16,440: - node_classifier - : epoch 85
-INFO:2025-03-03 20:00:16,501: - node_classifier - : Train: 0.9052, Test: 0.8487
-INFO:2025-03-03 20:00:16,501: - node_classifier - : epoch 86
-INFO:2025-03-03 20:00:16,566: - node_classifier - : Train: 0.8966, Test: 0.8266
-INFO:2025-03-03 20:00:16,566: - node_classifier - : epoch 87
-INFO:2025-03-03 20:00:16,632: - node_classifier - : Train: 0.8978, Test: 0.8266
-INFO:2025-03-03 20:00:16,632: - node_classifier - : epoch 88
-INFO:2025-03-03 20:00:16,695: - node_classifier - : Train: 0.9032, Test: 0.8524
-INFO:2025-03-03 20:00:16,695: - node_classifier - : epoch 89
-INFO:2025-03-03 20:00:16,758: - node_classifier - : Train: 0.9044, Test: 0.8450
-INFO:2025-03-03 20:00:16,758: - node_classifier - : epoch 90
-INFO:2025-03-03 20:00:16,821: - node_classifier - : Train: 0.8986, Test: 0.8376
-INFO:2025-03-03 20:00:16,821: - node_classifier - : epoch 91
-INFO:2025-03-03 20:00:16,883: - node_classifier - : Train: 0.8999, Test: 0.8303
-INFO:2025-03-03 20:00:16,883: - node_classifier - : epoch 92
-INFO:2025-03-03 20:00:16,943: - node_classifier - : Train: 0.8970, Test: 0.8598
-INFO:2025-03-03 20:00:16,943: - node_classifier - : epoch 93
-INFO:2025-03-03 20:00:17,006: - node_classifier - : Train: 0.9019, Test: 0.8598
-INFO:2025-03-03 20:00:17,006: - node_classifier - : epoch 94
-INFO:2025-03-03 20:00:17,070: - node_classifier - : Train: 0.9011, Test: 0.8376
-INFO:2025-03-03 20:00:17,070: - node_classifier - : epoch 95
-INFO:2025-03-03 20:00:17,132: - node_classifier - : Train: 0.9019, Test: 0.8303
-INFO:2025-03-03 20:00:17,133: - node_classifier - : epoch 96
-INFO:2025-03-03 20:00:17,194: - node_classifier - : Train: 0.9073, Test: 0.8635
-INFO:2025-03-03 20:00:17,194: - node_classifier - : epoch 97
-INFO:2025-03-03 20:00:17,259: - node_classifier - : Train: 0.9011, Test: 0.8561
-INFO:2025-03-03 20:00:17,259: - node_classifier - : epoch 98
-INFO:2025-03-03 20:00:17,319: - node_classifier - : Train: 0.8933, Test: 0.8376
-INFO:2025-03-03 20:00:17,319: - node_classifier - : epoch 99
-INFO:2025-03-03 20:00:17,385: - node_classifier - : Train: 0.9036, Test: 0.8450
-INFO:2025-03-03 20:00:17,396: - ExpGraphInfluenceFunction - : Model training time: 5.880960702896118
-INFO:2025-03-03 20:00:17,397: - ExpGraphInfluenceFunction - : model evaluation
-DEBUG:2025-03-03 20:00:17,397: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:17,442: - ExpGraphInfluenceFunction - : Evaluation cost 0.04500436782836914 seconds.
-INFO:2025-03-03 20:00:17,442: - ExpGraphInfluenceFunction - : Final Test F1: 0.8450184501845017
-INFO:2025-03-03 20:00:17,442: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8450184501845018
-INFO:2025-03-03 20:00:17,443: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8450184501845018
-INFO:2025-03-03 20:00:17,443: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8450184501845018
-DEBUG:2025-03-03 20:00:17,588: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:17,640: - ExpGraphInfluenceFunction - : Run 3.000000
-INFO:2025-03-03 20:00:17,640: - ExpGraphInfluenceFunction - : training target models, run 3
-INFO:2025-03-03 20:00:17,641: - node_classifier - : training model
-INFO:2025-03-03 20:00:17,641: - node_classifier - : generate train loader
-INFO:2025-03-03 20:00:17,644: - node_classifier - : generate train loader finish
-INFO:2025-03-03 20:00:17,644: - node_classifier - : epoch 0
-INFO:2025-03-03 20:00:17,708: - node_classifier - : Train: 0.5482, Test: 0.5609
-INFO:2025-03-03 20:00:17,709: - node_classifier - : epoch 1
-INFO:2025-03-03 20:00:17,765: - node_classifier - : Train: 0.6508, Test: 0.6273
-INFO:2025-03-03 20:00:17,765: - node_classifier - : epoch 2
-INFO:2025-03-03 20:00:17,822: - node_classifier - : Train: 0.7185, Test: 0.7269
-INFO:2025-03-03 20:00:17,823: - node_classifier - : epoch 3
-INFO:2025-03-03 20:00:17,879: - node_classifier - : Train: 0.7390, Test: 0.7454
-INFO:2025-03-03 20:00:17,879: - node_classifier - : epoch 4
-INFO:2025-03-03 20:00:17,933: - node_classifier - : Train: 0.7583, Test: 0.7565
-INFO:2025-03-03 20:00:17,933: - node_classifier - : epoch 5
-INFO:2025-03-03 20:00:17,987: - node_classifier - : Train: 0.7969, Test: 0.7675
-INFO:2025-03-03 20:00:17,987: - node_classifier - : epoch 6
-INFO:2025-03-03 20:00:18,043: - node_classifier - : Train: 0.8363, Test: 0.8303
-INFO:2025-03-03 20:00:18,044: - node_classifier - : epoch 7
-INFO:2025-03-03 20:00:18,101: - node_classifier - : Train: 0.8490, Test: 0.8303
-INFO:2025-03-03 20:00:18,101: - node_classifier - : epoch 8
-INFO:2025-03-03 20:00:18,158: - node_classifier - : Train: 0.8621, Test: 0.8413
-INFO:2025-03-03 20:00:18,159: - node_classifier - : epoch 9
-INFO:2025-03-03 20:00:18,214: - node_classifier - : Train: 0.8617, Test: 0.8339
-INFO:2025-03-03 20:00:18,215: - node_classifier - : epoch 10
-INFO:2025-03-03 20:00:18,292: - node_classifier - : Train: 0.8662, Test: 0.8303
-INFO:2025-03-03 20:00:18,294: - node_classifier - : epoch 11
-INFO:2025-03-03 20:00:18,354: - node_classifier - : Train: 0.8683, Test: 0.8303
-INFO:2025-03-03 20:00:18,355: - node_classifier - : epoch 12
-INFO:2025-03-03 20:00:18,410: - node_classifier - : Train: 0.8765, Test: 0.8266
-INFO:2025-03-03 20:00:18,410: - node_classifier - : epoch 13
-INFO:2025-03-03 20:00:18,463: - node_classifier - : Train: 0.8748, Test: 0.8303
-INFO:2025-03-03 20:00:18,464: - node_classifier - : epoch 14
-INFO:2025-03-03 20:00:18,518: - node_classifier - : Train: 0.8810, Test: 0.8376
-INFO:2025-03-03 20:00:18,519: - node_classifier - : epoch 15
-INFO:2025-03-03 20:00:18,574: - node_classifier - : Train: 0.8847, Test: 0.8303
-INFO:2025-03-03 20:00:18,574: - node_classifier - : epoch 16
-INFO:2025-03-03 20:00:18,626: - node_classifier - : Train: 0.8826, Test: 0.8376
-INFO:2025-03-03 20:00:18,626: - node_classifier - : epoch 17
-INFO:2025-03-03 20:00:18,679: - node_classifier - : Train: 0.8826, Test: 0.8339
-INFO:2025-03-03 20:00:18,680: - node_classifier - : epoch 18
-INFO:2025-03-03 20:00:18,731: - node_classifier - : Train: 0.8806, Test: 0.8266
-INFO:2025-03-03 20:00:18,731: - node_classifier - : epoch 19
-INFO:2025-03-03 20:00:18,786: - node_classifier - : Train: 0.8826, Test: 0.8339
-INFO:2025-03-03 20:00:18,787: - node_classifier - : epoch 20
-INFO:2025-03-03 20:00:18,845: - node_classifier - : Train: 0.8839, Test: 0.8339
-INFO:2025-03-03 20:00:18,846: - node_classifier - : epoch 21
-INFO:2025-03-03 20:00:18,903: - node_classifier - : Train: 0.8880, Test: 0.8376
-INFO:2025-03-03 20:00:18,903: - node_classifier - : epoch 22
-INFO:2025-03-03 20:00:18,959: - node_classifier - : Train: 0.8872, Test: 0.8450
-INFO:2025-03-03 20:00:18,960: - node_classifier - : epoch 23
-INFO:2025-03-03 20:00:19,018: - node_classifier - : Train: 0.8843, Test: 0.8303
-INFO:2025-03-03 20:00:19,018: - node_classifier - : epoch 24
-INFO:2025-03-03 20:00:19,075: - node_classifier - : Train: 0.8847, Test: 0.8413
-INFO:2025-03-03 20:00:19,075: - node_classifier - : epoch 25
-INFO:2025-03-03 20:00:19,137: - node_classifier - : Train: 0.8876, Test: 0.8561
-INFO:2025-03-03 20:00:19,138: - node_classifier - : epoch 26
-INFO:2025-03-03 20:00:19,192: - node_classifier - : Train: 0.8904, Test: 0.8450
-INFO:2025-03-03 20:00:19,192: - node_classifier - : epoch 27
-INFO:2025-03-03 20:00:19,249: - node_classifier - : Train: 0.8892, Test: 0.8487
-INFO:2025-03-03 20:00:19,249: - node_classifier - : epoch 28
-INFO:2025-03-03 20:00:19,306: - node_classifier - : Train: 0.8929, Test: 0.8487
-INFO:2025-03-03 20:00:19,306: - node_classifier - : epoch 29
-INFO:2025-03-03 20:00:19,361: - node_classifier - : Train: 0.8855, Test: 0.8339
-INFO:2025-03-03 20:00:19,361: - node_classifier - : epoch 30
-INFO:2025-03-03 20:00:19,417: - node_classifier - : Train: 0.8896, Test: 0.8487
-INFO:2025-03-03 20:00:19,417: - node_classifier - : epoch 31
-INFO:2025-03-03 20:00:19,471: - node_classifier - : Train: 0.8929, Test: 0.8598
-INFO:2025-03-03 20:00:19,472: - node_classifier - : epoch 32
-INFO:2025-03-03 20:00:19,526: - node_classifier - : Train: 0.8908, Test: 0.8339
-INFO:2025-03-03 20:00:19,527: - node_classifier - : epoch 33
-INFO:2025-03-03 20:00:19,584: - node_classifier - : Train: 0.8921, Test: 0.8155
-INFO:2025-03-03 20:00:19,584: - node_classifier - : epoch 34
-INFO:2025-03-03 20:00:19,641: - node_classifier - : Train: 0.8904, Test: 0.8303
-INFO:2025-03-03 20:00:19,641: - node_classifier - : epoch 35
-INFO:2025-03-03 20:00:19,698: - node_classifier - : Train: 0.8986, Test: 0.8376
-INFO:2025-03-03 20:00:19,698: - node_classifier - : epoch 36
-INFO:2025-03-03 20:00:19,754: - node_classifier - : Train: 0.9003, Test: 0.8303
-INFO:2025-03-03 20:00:19,755: - node_classifier - : epoch 37
-INFO:2025-03-03 20:00:19,812: - node_classifier - : Train: 0.8913, Test: 0.8376
-INFO:2025-03-03 20:00:19,812: - node_classifier - : epoch 38
-INFO:2025-03-03 20:00:19,868: - node_classifier - : Train: 0.8904, Test: 0.8376
-INFO:2025-03-03 20:00:19,869: - node_classifier - : epoch 39
-INFO:2025-03-03 20:00:19,924: - node_classifier - : Train: 0.8999, Test: 0.8487
-INFO:2025-03-03 20:00:19,924: - node_classifier - : epoch 40
-INFO:2025-03-03 20:00:19,978: - node_classifier - : Train: 0.8933, Test: 0.8413
-INFO:2025-03-03 20:00:19,979: - node_classifier - : epoch 41
-INFO:2025-03-03 20:00:20,034: - node_classifier - : Train: 0.8970, Test: 0.8266
-INFO:2025-03-03 20:00:20,034: - node_classifier - : epoch 42
-INFO:2025-03-03 20:00:20,090: - node_classifier - : Train: 0.8937, Test: 0.8561
-INFO:2025-03-03 20:00:20,090: - node_classifier - : epoch 43
-INFO:2025-03-03 20:00:20,147: - node_classifier - : Train: 0.8974, Test: 0.8598
-INFO:2025-03-03 20:00:20,147: - node_classifier - : epoch 44
-INFO:2025-03-03 20:00:20,202: - node_classifier - : Train: 0.8925, Test: 0.8524
-INFO:2025-03-03 20:00:20,203: - node_classifier - : epoch 45
-INFO:2025-03-03 20:00:20,258: - node_classifier - : Train: 0.8933, Test: 0.8303
-INFO:2025-03-03 20:00:20,258: - node_classifier - : epoch 46
-INFO:2025-03-03 20:00:20,312: - node_classifier - : Train: 0.8978, Test: 0.8524
-INFO:2025-03-03 20:00:20,313: - node_classifier - : epoch 47
-INFO:2025-03-03 20:00:20,369: - node_classifier - : Train: 0.8941, Test: 0.8561
-INFO:2025-03-03 20:00:20,369: - node_classifier - : epoch 48
-INFO:2025-03-03 20:00:20,425: - node_classifier - : Train: 0.8925, Test: 0.8155
-INFO:2025-03-03 20:00:20,426: - node_classifier - : epoch 49
-INFO:2025-03-03 20:00:20,482: - node_classifier - : Train: 0.8925, Test: 0.8376
-INFO:2025-03-03 20:00:20,482: - node_classifier - : epoch 50
-INFO:2025-03-03 20:00:20,537: - node_classifier - : Train: 0.8937, Test: 0.8450
-INFO:2025-03-03 20:00:20,537: - node_classifier - : epoch 51
-INFO:2025-03-03 20:00:20,594: - node_classifier - : Train: 0.8958, Test: 0.8561
-INFO:2025-03-03 20:00:20,595: - node_classifier - : epoch 52
-INFO:2025-03-03 20:00:20,651: - node_classifier - : Train: 0.8872, Test: 0.8487
-INFO:2025-03-03 20:00:20,651: - node_classifier - : epoch 53
-INFO:2025-03-03 20:00:20,708: - node_classifier - : Train: 0.8982, Test: 0.8376
-INFO:2025-03-03 20:00:20,708: - node_classifier - : epoch 54
-INFO:2025-03-03 20:00:20,772: - node_classifier - : Train: 0.8933, Test: 0.8524
-INFO:2025-03-03 20:00:20,772: - node_classifier - : epoch 55
-INFO:2025-03-03 20:00:20,832: - node_classifier - : Train: 0.8921, Test: 0.8339
-INFO:2025-03-03 20:00:20,832: - node_classifier - : epoch 56
-INFO:2025-03-03 20:00:20,895: - node_classifier - : Train: 0.8954, Test: 0.8413
-INFO:2025-03-03 20:00:20,896: - node_classifier - : epoch 57
-INFO:2025-03-03 20:00:20,957: - node_classifier - : Train: 0.8974, Test: 0.8524
-INFO:2025-03-03 20:00:20,957: - node_classifier - : epoch 58
-INFO:2025-03-03 20:00:21,021: - node_classifier - : Train: 0.8982, Test: 0.8376
-INFO:2025-03-03 20:00:21,022: - node_classifier - : epoch 59
-INFO:2025-03-03 20:00:21,080: - node_classifier - : Train: 0.8929, Test: 0.8339
-INFO:2025-03-03 20:00:21,081: - node_classifier - : epoch 60
-INFO:2025-03-03 20:00:21,137: - node_classifier - : Train: 0.8970, Test: 0.8376
-INFO:2025-03-03 20:00:21,137: - node_classifier - : epoch 61
-INFO:2025-03-03 20:00:21,201: - node_classifier - : Train: 0.8954, Test: 0.8413
-INFO:2025-03-03 20:00:21,201: - node_classifier - : epoch 62
-INFO:2025-03-03 20:00:21,263: - node_classifier - : Train: 0.8982, Test: 0.8524
-INFO:2025-03-03 20:00:21,264: - node_classifier - : epoch 63
-INFO:2025-03-03 20:00:21,328: - node_classifier - : Train: 0.8999, Test: 0.8376
-INFO:2025-03-03 20:00:21,328: - node_classifier - : epoch 64
-INFO:2025-03-03 20:00:21,393: - node_classifier - : Train: 0.8962, Test: 0.8450
-INFO:2025-03-03 20:00:21,393: - node_classifier - : epoch 65
-INFO:2025-03-03 20:00:21,454: - node_classifier - : Train: 0.8954, Test: 0.8450
-INFO:2025-03-03 20:00:21,455: - node_classifier - : epoch 66
-INFO:2025-03-03 20:00:21,513: - node_classifier - : Train: 0.8995, Test: 0.8450
-INFO:2025-03-03 20:00:21,513: - node_classifier - : epoch 67
-INFO:2025-03-03 20:00:21,572: - node_classifier - : Train: 0.8962, Test: 0.8413
-INFO:2025-03-03 20:00:21,572: - node_classifier - : epoch 68
-INFO:2025-03-03 20:00:21,629: - node_classifier - : Train: 0.8991, Test: 0.8339
-INFO:2025-03-03 20:00:21,630: - node_classifier - : epoch 69
-INFO:2025-03-03 20:00:21,687: - node_classifier - : Train: 0.8954, Test: 0.8339
-INFO:2025-03-03 20:00:21,687: - node_classifier - : epoch 70
-INFO:2025-03-03 20:00:21,744: - node_classifier - : Train: 0.9019, Test: 0.8376
-INFO:2025-03-03 20:00:21,744: - node_classifier - : epoch 71
-INFO:2025-03-03 20:00:21,801: - node_classifier - : Train: 0.8999, Test: 0.8635
-INFO:2025-03-03 20:00:21,802: - node_classifier - : epoch 72
-INFO:2025-03-03 20:00:21,861: - node_classifier - : Train: 0.8974, Test: 0.8524
-INFO:2025-03-03 20:00:21,861: - node_classifier - : epoch 73
-INFO:2025-03-03 20:00:21,917: - node_classifier - : Train: 0.9007, Test: 0.8450
-INFO:2025-03-03 20:00:21,918: - node_classifier - : epoch 74
-INFO:2025-03-03 20:00:21,975: - node_classifier - : Train: 0.9032, Test: 0.8450
-INFO:2025-03-03 20:00:21,975: - node_classifier - : epoch 75
-INFO:2025-03-03 20:00:22,033: - node_classifier - : Train: 0.8995, Test: 0.8487
-INFO:2025-03-03 20:00:22,033: - node_classifier - : epoch 76
-INFO:2025-03-03 20:00:22,090: - node_classifier - : Train: 0.8991, Test: 0.8561
-INFO:2025-03-03 20:00:22,091: - node_classifier - : epoch 77
-INFO:2025-03-03 20:00:22,149: - node_classifier - : Train: 0.9023, Test: 0.8598
-INFO:2025-03-03 20:00:22,150: - node_classifier - : epoch 78
-INFO:2025-03-03 20:00:22,209: - node_classifier - : Train: 0.8958, Test: 0.8524
-INFO:2025-03-03 20:00:22,210: - node_classifier - : epoch 79
-INFO:2025-03-03 20:00:22,271: - node_classifier - : Train: 0.8970, Test: 0.8450
-INFO:2025-03-03 20:00:22,271: - node_classifier - : epoch 80
-INFO:2025-03-03 20:00:22,331: - node_classifier - : Train: 0.8999, Test: 0.8450
-INFO:2025-03-03 20:00:22,331: - node_classifier - : epoch 81
-INFO:2025-03-03 20:00:22,388: - node_classifier - : Train: 0.9011, Test: 0.8561
-INFO:2025-03-03 20:00:22,388: - node_classifier - : epoch 82
-INFO:2025-03-03 20:00:22,446: - node_classifier - : Train: 0.8978, Test: 0.8635
-INFO:2025-03-03 20:00:22,446: - node_classifier - : epoch 83
-INFO:2025-03-03 20:00:22,506: - node_classifier - : Train: 0.9036, Test: 0.8598
-INFO:2025-03-03 20:00:22,507: - node_classifier - : epoch 84
-INFO:2025-03-03 20:00:22,570: - node_classifier - : Train: 0.8945, Test: 0.8561
-INFO:2025-03-03 20:00:22,571: - node_classifier - : epoch 85
-INFO:2025-03-03 20:00:22,634: - node_classifier - : Train: 0.8970, Test: 0.8303
-INFO:2025-03-03 20:00:22,635: - node_classifier - : epoch 86
-INFO:2025-03-03 20:00:22,697: - node_classifier - : Train: 0.8986, Test: 0.8561
-INFO:2025-03-03 20:00:22,698: - node_classifier - : epoch 87
-INFO:2025-03-03 20:00:22,759: - node_classifier - : Train: 0.8962, Test: 0.8598
-INFO:2025-03-03 20:00:22,759: - node_classifier - : epoch 88
-INFO:2025-03-03 20:00:22,823: - node_classifier - : Train: 0.8991, Test: 0.8413
-INFO:2025-03-03 20:00:22,823: - node_classifier - : epoch 89
-INFO:2025-03-03 20:00:22,886: - node_classifier - : Train: 0.8925, Test: 0.8672
-INFO:2025-03-03 20:00:22,887: - node_classifier - : epoch 90
-INFO:2025-03-03 20:00:22,950: - node_classifier - : Train: 0.9027, Test: 0.8635
-INFO:2025-03-03 20:00:22,951: - node_classifier - : epoch 91
-INFO:2025-03-03 20:00:23,014: - node_classifier - : Train: 0.9060, Test: 0.8524
-INFO:2025-03-03 20:00:23,014: - node_classifier - : epoch 92
-INFO:2025-03-03 20:00:23,081: - node_classifier - : Train: 0.9003, Test: 0.8376
-INFO:2025-03-03 20:00:23,081: - node_classifier - : epoch 93
-INFO:2025-03-03 20:00:23,142: - node_classifier - : Train: 0.8970, Test: 0.8303
-INFO:2025-03-03 20:00:23,142: - node_classifier - : epoch 94
-INFO:2025-03-03 20:00:23,209: - node_classifier - : Train: 0.8958, Test: 0.8450
-INFO:2025-03-03 20:00:23,209: - node_classifier - : epoch 95
-INFO:2025-03-03 20:00:23,271: - node_classifier - : Train: 0.9023, Test: 0.8561
-INFO:2025-03-03 20:00:23,272: - node_classifier - : epoch 96
-INFO:2025-03-03 20:00:23,334: - node_classifier - : Train: 0.9019, Test: 0.8487
-INFO:2025-03-03 20:00:23,335: - node_classifier - : epoch 97
-INFO:2025-03-03 20:00:23,398: - node_classifier - : Train: 0.8995, Test: 0.8524
-INFO:2025-03-03 20:00:23,399: - node_classifier - : epoch 98
-INFO:2025-03-03 20:00:23,460: - node_classifier - : Train: 0.8970, Test: 0.8450
-INFO:2025-03-03 20:00:23,461: - node_classifier - : epoch 99
-INFO:2025-03-03 20:00:23,527: - node_classifier - : Train: 0.9023, Test: 0.8413
-INFO:2025-03-03 20:00:23,536: - ExpGraphInfluenceFunction - : Model training time: 5.894960403442383
-INFO:2025-03-03 20:00:23,536: - ExpGraphInfluenceFunction - : model evaluation
-DEBUG:2025-03-03 20:00:23,536: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:23,583: - ExpGraphInfluenceFunction - : Evaluation cost 0.04653167724609375 seconds.
-INFO:2025-03-03 20:00:23,584: - ExpGraphInfluenceFunction - : Final Test F1: 0.8413284132841329
-INFO:2025-03-03 20:00:23,584: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8413284132841329
-INFO:2025-03-03 20:00:23,584: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8413284132841329
-INFO:2025-03-03 20:00:23,584: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8413284132841329
-DEBUG:2025-03-03 20:00:23,739: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:23,784: - ExpGraphInfluenceFunction - : Run 4.000000
-INFO:2025-03-03 20:00:23,785: - ExpGraphInfluenceFunction - : training target models, run 4
-INFO:2025-03-03 20:00:23,785: - node_classifier - : training model
-INFO:2025-03-03 20:00:23,785: - node_classifier - : generate train loader
-INFO:2025-03-03 20:00:23,788: - node_classifier - : generate train loader finish
-INFO:2025-03-03 20:00:23,788: - node_classifier - : epoch 0
-INFO:2025-03-03 20:00:23,848: - node_classifier - : Train: 0.4867, Test: 0.4686
-INFO:2025-03-03 20:00:23,848: - node_classifier - : epoch 1
-INFO:2025-03-03 20:00:23,905: - node_classifier - : Train: 0.5556, Test: 0.5277
-INFO:2025-03-03 20:00:23,905: - node_classifier - : epoch 2
-INFO:2025-03-03 20:00:23,962: - node_classifier - : Train: 0.6877, Test: 0.6863
-INFO:2025-03-03 20:00:23,963: - node_classifier - : epoch 3
-INFO:2025-03-03 20:00:24,017: - node_classifier - : Train: 0.7472, Test: 0.7675
-INFO:2025-03-03 20:00:24,018: - node_classifier - : epoch 4
-INFO:2025-03-03 20:00:24,074: - node_classifier - : Train: 0.7948, Test: 0.8044
-INFO:2025-03-03 20:00:24,074: - node_classifier - : epoch 5
-INFO:2025-03-03 20:00:24,129: - node_classifier - : Train: 0.8252, Test: 0.8413
-INFO:2025-03-03 20:00:24,129: - node_classifier - : epoch 6
-INFO:2025-03-03 20:00:24,211: - node_classifier - : Train: 0.8474, Test: 0.8376
-INFO:2025-03-03 20:00:24,212: - node_classifier - : epoch 7
-INFO:2025-03-03 20:00:24,270: - node_classifier - : Train: 0.8560, Test: 0.8229
-INFO:2025-03-03 20:00:24,271: - node_classifier - : epoch 8
-INFO:2025-03-03 20:00:24,328: - node_classifier - : Train: 0.8670, Test: 0.8266
-INFO:2025-03-03 20:00:24,328: - node_classifier - : epoch 9
-INFO:2025-03-03 20:00:24,392: - node_classifier - : Train: 0.8728, Test: 0.8229
-INFO:2025-03-03 20:00:24,392: - node_classifier - : epoch 10
-INFO:2025-03-03 20:00:24,448: - node_classifier - : Train: 0.8765, Test: 0.8266
-INFO:2025-03-03 20:00:24,449: - node_classifier - : epoch 11
-INFO:2025-03-03 20:00:24,503: - node_classifier - : Train: 0.8769, Test: 0.8413
-INFO:2025-03-03 20:00:24,503: - node_classifier - : epoch 12
-INFO:2025-03-03 20:00:24,556: - node_classifier - : Train: 0.8814, Test: 0.8450
-INFO:2025-03-03 20:00:24,557: - node_classifier - : epoch 13
-INFO:2025-03-03 20:00:24,614: - node_classifier - : Train: 0.8814, Test: 0.8339
-INFO:2025-03-03 20:00:24,614: - node_classifier - : epoch 14
-INFO:2025-03-03 20:00:24,672: - node_classifier - : Train: 0.8773, Test: 0.8487
-INFO:2025-03-03 20:00:24,672: - node_classifier - : epoch 15
-INFO:2025-03-03 20:00:24,728: - node_classifier - : Train: 0.8835, Test: 0.8339
-INFO:2025-03-03 20:00:24,728: - node_classifier - : epoch 16
-INFO:2025-03-03 20:00:24,785: - node_classifier - : Train: 0.8818, Test: 0.8266
-INFO:2025-03-03 20:00:24,785: - node_classifier - : epoch 17
-INFO:2025-03-03 20:00:24,842: - node_classifier - : Train: 0.8814, Test: 0.8376
-INFO:2025-03-03 20:00:24,843: - node_classifier - : epoch 18
-INFO:2025-03-03 20:00:24,901: - node_classifier - : Train: 0.8900, Test: 0.8376
-INFO:2025-03-03 20:00:24,902: - node_classifier - : epoch 19
-INFO:2025-03-03 20:00:24,959: - node_classifier - : Train: 0.8884, Test: 0.8303
-INFO:2025-03-03 20:00:24,959: - node_classifier - : epoch 20
-INFO:2025-03-03 20:00:25,016: - node_classifier - : Train: 0.8884, Test: 0.8339
-INFO:2025-03-03 20:00:25,017: - node_classifier - : epoch 21
-INFO:2025-03-03 20:00:25,071: - node_classifier - : Train: 0.8884, Test: 0.8450
-INFO:2025-03-03 20:00:25,071: - node_classifier - : epoch 22
-INFO:2025-03-03 20:00:25,126: - node_classifier - : Train: 0.8896, Test: 0.8524
-INFO:2025-03-03 20:00:25,127: - node_classifier - : epoch 23
-INFO:2025-03-03 20:00:25,181: - node_classifier - : Train: 0.8888, Test: 0.8339
-INFO:2025-03-03 20:00:25,181: - node_classifier - : epoch 24
-INFO:2025-03-03 20:00:25,235: - node_classifier - : Train: 0.8896, Test: 0.8413
-INFO:2025-03-03 20:00:25,236: - node_classifier - : epoch 25
-INFO:2025-03-03 20:00:25,290: - node_classifier - : Train: 0.8970, Test: 0.8524
-INFO:2025-03-03 20:00:25,291: - node_classifier - : epoch 26
-INFO:2025-03-03 20:00:25,346: - node_classifier - : Train: 0.8880, Test: 0.8229
-INFO:2025-03-03 20:00:25,347: - node_classifier - : epoch 27
-INFO:2025-03-03 20:00:25,403: - node_classifier - : Train: 0.8929, Test: 0.8450
-INFO:2025-03-03 20:00:25,404: - node_classifier - : epoch 28
-INFO:2025-03-03 20:00:25,461: - node_classifier - : Train: 0.8917, Test: 0.8561
-INFO:2025-03-03 20:00:25,461: - node_classifier - : epoch 29
-INFO:2025-03-03 20:00:25,519: - node_classifier - : Train: 0.8929, Test: 0.8266
-INFO:2025-03-03 20:00:25,519: - node_classifier - : epoch 30
-INFO:2025-03-03 20:00:25,577: - node_classifier - : Train: 0.8945, Test: 0.8376
-INFO:2025-03-03 20:00:25,578: - node_classifier - : epoch 31
-INFO:2025-03-03 20:00:25,634: - node_classifier - : Train: 0.8945, Test: 0.8303
-INFO:2025-03-03 20:00:25,635: - node_classifier - : epoch 32
-INFO:2025-03-03 20:00:25,692: - node_classifier - : Train: 0.8954, Test: 0.8339
-INFO:2025-03-03 20:00:25,692: - node_classifier - : epoch 33
-INFO:2025-03-03 20:00:25,752: - node_classifier - : Train: 0.8970, Test: 0.8413
-INFO:2025-03-03 20:00:25,752: - node_classifier - : epoch 34
-INFO:2025-03-03 20:00:25,815: - node_classifier - : Train: 0.8962, Test: 0.8561
-INFO:2025-03-03 20:00:25,815: - node_classifier - : epoch 35
-INFO:2025-03-03 20:00:25,877: - node_classifier - : Train: 0.8929, Test: 0.8635
-INFO:2025-03-03 20:00:25,878: - node_classifier - : epoch 36
-INFO:2025-03-03 20:00:25,942: - node_classifier - : Train: 0.8925, Test: 0.8376
-INFO:2025-03-03 20:00:25,943: - node_classifier - : epoch 37
-INFO:2025-03-03 20:00:26,002: - node_classifier - : Train: 0.8945, Test: 0.8376
-INFO:2025-03-03 20:00:26,003: - node_classifier - : epoch 38
-INFO:2025-03-03 20:00:26,059: - node_classifier - : Train: 0.8974, Test: 0.8561
-INFO:2025-03-03 20:00:26,059: - node_classifier - : epoch 39
-INFO:2025-03-03 20:00:26,118: - node_classifier - : Train: 0.8958, Test: 0.8487
-INFO:2025-03-03 20:00:26,118: - node_classifier - : epoch 40
-INFO:2025-03-03 20:00:26,177: - node_classifier - : Train: 0.8925, Test: 0.8339
-INFO:2025-03-03 20:00:26,177: - node_classifier - : epoch 41
-INFO:2025-03-03 20:00:26,237: - node_classifier - : Train: 0.8921, Test: 0.8303
-INFO:2025-03-03 20:00:26,237: - node_classifier - : epoch 42
-INFO:2025-03-03 20:00:26,296: - node_classifier - : Train: 0.8962, Test: 0.8450
-INFO:2025-03-03 20:00:26,297: - node_classifier - : epoch 43
-INFO:2025-03-03 20:00:26,352: - node_classifier - : Train: 0.8974, Test: 0.8598
-INFO:2025-03-03 20:00:26,353: - node_classifier - : epoch 44
-INFO:2025-03-03 20:00:26,410: - node_classifier - : Train: 0.8937, Test: 0.8376
-INFO:2025-03-03 20:00:26,410: - node_classifier - : epoch 45
-INFO:2025-03-03 20:00:26,465: - node_classifier - : Train: 0.8933, Test: 0.8303
-INFO:2025-03-03 20:00:26,465: - node_classifier - : epoch 46
-INFO:2025-03-03 20:00:26,519: - node_classifier - : Train: 0.9007, Test: 0.8376
-INFO:2025-03-03 20:00:26,519: - node_classifier - : epoch 47
-INFO:2025-03-03 20:00:26,575: - node_classifier - : Train: 0.8982, Test: 0.8487
-INFO:2025-03-03 20:00:26,575: - node_classifier - : epoch 48
-INFO:2025-03-03 20:00:26,632: - node_classifier - : Train: 0.8958, Test: 0.8303
-INFO:2025-03-03 20:00:26,632: - node_classifier - : epoch 49
-INFO:2025-03-03 20:00:26,688: - node_classifier - : Train: 0.9011, Test: 0.8266
-INFO:2025-03-03 20:00:26,688: - node_classifier - : epoch 50
-INFO:2025-03-03 20:00:26,744: - node_classifier - : Train: 0.8958, Test: 0.8450
-INFO:2025-03-03 20:00:26,745: - node_classifier - : epoch 51
-INFO:2025-03-03 20:00:26,800: - node_classifier - : Train: 0.8966, Test: 0.8450
-INFO:2025-03-03 20:00:26,800: - node_classifier - : epoch 52
-INFO:2025-03-03 20:00:26,855: - node_classifier - : Train: 0.8991, Test: 0.8376
-INFO:2025-03-03 20:00:26,855: - node_classifier - : epoch 53
-INFO:2025-03-03 20:00:26,911: - node_classifier - : Train: 0.8986, Test: 0.8376
-INFO:2025-03-03 20:00:26,911: - node_classifier - : epoch 54
-INFO:2025-03-03 20:00:26,967: - node_classifier - : Train: 0.9036, Test: 0.8339
-INFO:2025-03-03 20:00:26,967: - node_classifier - : epoch 55
-INFO:2025-03-03 20:00:27,023: - node_classifier - : Train: 0.8999, Test: 0.8413
-INFO:2025-03-03 20:00:27,023: - node_classifier - : epoch 56
-INFO:2025-03-03 20:00:27,078: - node_classifier - : Train: 0.8999, Test: 0.8450
-INFO:2025-03-03 20:00:27,078: - node_classifier - : epoch 57
-INFO:2025-03-03 20:00:27,134: - node_classifier - : Train: 0.8986, Test: 0.8413
-INFO:2025-03-03 20:00:27,135: - node_classifier - : epoch 58
-INFO:2025-03-03 20:00:27,190: - node_classifier - : Train: 0.8945, Test: 0.8376
-INFO:2025-03-03 20:00:27,190: - node_classifier - : epoch 59
-INFO:2025-03-03 20:00:27,246: - node_classifier - : Train: 0.8995, Test: 0.8413
-INFO:2025-03-03 20:00:27,247: - node_classifier - : epoch 60
-INFO:2025-03-03 20:00:27,306: - node_classifier - : Train: 0.8995, Test: 0.8450
-INFO:2025-03-03 20:00:27,307: - node_classifier - : epoch 61
-INFO:2025-03-03 20:00:27,368: - node_classifier - : Train: 0.8937, Test: 0.8376
-INFO:2025-03-03 20:00:27,368: - node_classifier - : epoch 62
-INFO:2025-03-03 20:00:27,432: - node_classifier - : Train: 0.8970, Test: 0.8339
-INFO:2025-03-03 20:00:27,433: - node_classifier - : epoch 63
-INFO:2025-03-03 20:00:27,501: - node_classifier - : Train: 0.9048, Test: 0.8561
-INFO:2025-03-03 20:00:27,502: - node_classifier - : epoch 64
-INFO:2025-03-03 20:00:27,565: - node_classifier - : Train: 0.9003, Test: 0.8635
-INFO:2025-03-03 20:00:27,565: - node_classifier - : epoch 65
-INFO:2025-03-03 20:00:27,630: - node_classifier - : Train: 0.9007, Test: 0.8487
-INFO:2025-03-03 20:00:27,630: - node_classifier - : epoch 66
-INFO:2025-03-03 20:00:27,687: - node_classifier - : Train: 0.9019, Test: 0.8376
-INFO:2025-03-03 20:00:27,688: - node_classifier - : epoch 67
-INFO:2025-03-03 20:00:27,750: - node_classifier - : Train: 0.9023, Test: 0.8487
-INFO:2025-03-03 20:00:27,750: - node_classifier - : epoch 68
-INFO:2025-03-03 20:00:27,818: - node_classifier - : Train: 0.8970, Test: 0.8413
-INFO:2025-03-03 20:00:27,819: - node_classifier - : epoch 69
-INFO:2025-03-03 20:00:27,881: - node_classifier - : Train: 0.8950, Test: 0.8524
-INFO:2025-03-03 20:00:27,881: - node_classifier - : epoch 70
-INFO:2025-03-03 20:00:27,944: - node_classifier - : Train: 0.9019, Test: 0.8303
-INFO:2025-03-03 20:00:27,944: - node_classifier - : epoch 71
-INFO:2025-03-03 20:00:28,007: - node_classifier - : Train: 0.8970, Test: 0.8524
-INFO:2025-03-03 20:00:28,007: - node_classifier - : epoch 72
-INFO:2025-03-03 20:00:28,066: - node_classifier - : Train: 0.8978, Test: 0.8672
-INFO:2025-03-03 20:00:28,066: - node_classifier - : epoch 73
-INFO:2025-03-03 20:00:28,123: - node_classifier - : Train: 0.8999, Test: 0.8450
-INFO:2025-03-03 20:00:28,123: - node_classifier - : epoch 74
-INFO:2025-03-03 20:00:28,181: - node_classifier - : Train: 0.8888, Test: 0.8303
-INFO:2025-03-03 20:00:28,182: - node_classifier - : epoch 75
-INFO:2025-03-03 20:00:28,240: - node_classifier - : Train: 0.8999, Test: 0.8303
-INFO:2025-03-03 20:00:28,240: - node_classifier - : epoch 76
-INFO:2025-03-03 20:00:28,299: - node_classifier - : Train: 0.8913, Test: 0.8339
-INFO:2025-03-03 20:00:28,299: - node_classifier - : epoch 77
-INFO:2025-03-03 20:00:28,356: - node_classifier - : Train: 0.9015, Test: 0.8413
-INFO:2025-03-03 20:00:28,357: - node_classifier - : epoch 78
-INFO:2025-03-03 20:00:28,418: - node_classifier - : Train: 0.8991, Test: 0.8487
-INFO:2025-03-03 20:00:28,418: - node_classifier - : epoch 79
-INFO:2025-03-03 20:00:28,476: - node_classifier - : Train: 0.8896, Test: 0.8339
-INFO:2025-03-03 20:00:28,477: - node_classifier - : epoch 80
-INFO:2025-03-03 20:00:28,536: - node_classifier - : Train: 0.8999, Test: 0.8413
-INFO:2025-03-03 20:00:28,536: - node_classifier - : epoch 81
-INFO:2025-03-03 20:00:28,597: - node_classifier - : Train: 0.8995, Test: 0.8450
-INFO:2025-03-03 20:00:28,597: - node_classifier - : epoch 82
-INFO:2025-03-03 20:00:28,655: - node_classifier - : Train: 0.9011, Test: 0.8450
-INFO:2025-03-03 20:00:28,656: - node_classifier - : epoch 83
-INFO:2025-03-03 20:00:28,715: - node_classifier - : Train: 0.8929, Test: 0.8339
-INFO:2025-03-03 20:00:28,715: - node_classifier - : epoch 84
-INFO:2025-03-03 20:00:28,771: - node_classifier - : Train: 0.9027, Test: 0.8450
-INFO:2025-03-03 20:00:28,772: - node_classifier - : epoch 85
-INFO:2025-03-03 20:00:28,832: - node_classifier - : Train: 0.9015, Test: 0.8524
-INFO:2025-03-03 20:00:28,832: - node_classifier - : epoch 86
-INFO:2025-03-03 20:00:28,892: - node_classifier - : Train: 0.8978, Test: 0.8413
-INFO:2025-03-03 20:00:28,892: - node_classifier - : epoch 87
-INFO:2025-03-03 20:00:28,949: - node_classifier - : Train: 0.8995, Test: 0.8524
-INFO:2025-03-03 20:00:28,950: - node_classifier - : epoch 88
-INFO:2025-03-03 20:00:29,007: - node_classifier - : Train: 0.8995, Test: 0.8487
-INFO:2025-03-03 20:00:29,007: - node_classifier - : epoch 89
-INFO:2025-03-03 20:00:29,068: - node_classifier - : Train: 0.8958, Test: 0.8413
-INFO:2025-03-03 20:00:29,069: - node_classifier - : epoch 90
-INFO:2025-03-03 20:00:29,132: - node_classifier - : Train: 0.8986, Test: 0.8598
-INFO:2025-03-03 20:00:29,133: - node_classifier - : epoch 91
-INFO:2025-03-03 20:00:29,194: - node_classifier - : Train: 0.8999, Test: 0.8303
-INFO:2025-03-03 20:00:29,194: - node_classifier - : epoch 92
-INFO:2025-03-03 20:00:29,261: - node_classifier - : Train: 0.9003, Test: 0.8450
-INFO:2025-03-03 20:00:29,261: - node_classifier - : epoch 93
-INFO:2025-03-03 20:00:29,326: - node_classifier - : Train: 0.8982, Test: 0.8561
-INFO:2025-03-03 20:00:29,326: - node_classifier - : epoch 94
-INFO:2025-03-03 20:00:29,391: - node_classifier - : Train: 0.9044, Test: 0.8376
-INFO:2025-03-03 20:00:29,391: - node_classifier - : epoch 95
-INFO:2025-03-03 20:00:29,458: - node_classifier - : Train: 0.8978, Test: 0.8413
-INFO:2025-03-03 20:00:29,458: - node_classifier - : epoch 96
-INFO:2025-03-03 20:00:29,522: - node_classifier - : Train: 0.9003, Test: 0.8413
-INFO:2025-03-03 20:00:29,522: - node_classifier - : epoch 97
-INFO:2025-03-03 20:00:29,589: - node_classifier - : Train: 0.8974, Test: 0.8487
-INFO:2025-03-03 20:00:29,589: - node_classifier - : epoch 98
-INFO:2025-03-03 20:00:29,652: - node_classifier - : Train: 0.8982, Test: 0.8598
-INFO:2025-03-03 20:00:29,652: - node_classifier - : epoch 99
-INFO:2025-03-03 20:00:29,715: - node_classifier - : Train: 0.8962, Test: 0.8487
-INFO:2025-03-03 20:00:29,727: - ExpGraphInfluenceFunction - : Model training time: 5.941897630691528
-INFO:2025-03-03 20:00:29,727: - ExpGraphInfluenceFunction - : model evaluation
-DEBUG:2025-03-03 20:00:29,728: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:29,775: - ExpGraphInfluenceFunction - : Evaluation cost 0.04751300811767578 seconds.
-INFO:2025-03-03 20:00:29,775: - ExpGraphInfluenceFunction - : Final Test F1: 0.8487084870848709
-INFO:2025-03-03 20:00:29,775: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8487084870848709
-INFO:2025-03-03 20:00:29,775: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8487084870848709
-INFO:2025-03-03 20:00:29,776: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8487084870848709
-DEBUG:2025-03-03 20:00:30,434: - node_classifier - : generating posteriors
-INFO:2025-03-03 20:00:30,514: - ExpGraphInfluenceFunction - : f1_score: avg=0.8405904059040591, std=0.00590405904059039
-INFO:2025-03-03 20:00:30,514: - ExpGraphInfluenceFunction - : accuracy: avg=0.8405904059040591, std=0.005904059040590407
-INFO:2025-03-03 20:00:30,515: - ExpGraphInfluenceFunction - : recall: avg=0.8405904059040591, std=0.005904059040590407
-INFO:2025-03-03 20:00:30,516: - ExpGraphInfluenceFunction - : precision: avg=0.8405904059040591, std=0.005904059040590407
-INFO:2025-03-03 20:00:30,516: - ExpGraphInfluenceFunction - : model training time: avg=6.004224729537964 seconds
-INFO:2025-03-03 20:00:30,517: - ExpGraphInfluenceFunction - : f1_score of GIF: avg=0.8317343173431734, std=0.005005409581642281
-INFO:2025-03-03 20:00:30,517: - ExpGraphInfluenceFunction - : accuracy of GIF: avg=0.8428044280442805, std=0.0037631140321718114
-INFO:2025-03-03 20:00:30,517: - ExpGraphInfluenceFunction - : recall of GIF: avg=0.8428044280442805, std=0.0037631140321718114
-INFO:2025-03-03 20:00:30,518: - ExpGraphInfluenceFunction - : precision of GIF: avg=0.8428044280442805, std=0.0037631140321718114
-INFO:2025-03-03 20:00:30,518: - ExpGraphInfluenceFunction - : GIF unlearning time: avg=0.2991628170013428 seconds
+INFO:2025-03-04 20:57:28,058: - root - : cora_0.1_GCN_edge_0.05
+INFO:2025-03-04 20:57:28,063: - data_store - : folder temp_data/processed_data/cora exists, do not need to create again.
+INFO:2025-03-04 20:57:28,064: - data_store - : folder temp_data/models/cora exists, do not need to create again.
+INFO:2025-03-04 20:57:28,064: - data_store - : folder temp_data/analysis_data/optimal/cora exists, do not need to create again.
+INFO:2025-03-04 20:57:28,065: - data_store - : folder temp_data/analysis_data/posteriors/cora exists, do not need to create again.
+INFO:2025-03-04 20:57:28,065: - data_store - : loading raw data
+INFO:2025-03-04 20:57:28,074: - ExpGraphInfluenceFunction - : splitting train/test data
+INFO:2025-03-04 20:57:28,077: - data_store - : saving train test split data
+DEBUG:2025-03-04 20:57:28,078: - ExpGraphInfluenceFunction - : Train data  #.Nodes: 2708.000000, #.Edges: 10556.000000
+INFO:2025-03-04 20:57:28,083: - ExpGraphInfluenceFunction - : target model: GCN
+INFO:2025-03-04 20:57:28,084: - node_classifier - : target model: GCN
+INFO:2025-03-04 20:57:29,348: - ExpGraphInfluenceFunction - : Run 0.000000
+INFO:2025-03-04 20:57:29,349: - ExpGraphInfluenceFunction - : training target models, run 0
+INFO:2025-03-04 20:57:29,349: - node_classifier - : training model
+INFO:2025-03-04 20:57:29,456: - node_classifier - : generate train loader
+INFO:2025-03-04 20:57:29,461: - node_classifier - : generate train loader finish
+INFO:2025-03-04 20:57:29,462: - node_classifier - : epoch 0
+INFO:2025-03-04 20:57:30,122: - node_classifier - : Train: 0.4690, Test: 0.4686
+INFO:2025-03-04 20:57:30,122: - node_classifier - : epoch 1
+INFO:2025-03-04 20:57:30,186: - node_classifier - : Train: 0.5691, Test: 0.5683
+INFO:2025-03-04 20:57:30,186: - node_classifier - : epoch 2
+INFO:2025-03-04 20:57:30,245: - node_classifier - : Train: 0.6951, Test: 0.6900
+INFO:2025-03-04 20:57:30,246: - node_classifier - : epoch 3
+INFO:2025-03-04 20:57:30,307: - node_classifier - : Train: 0.7481, Test: 0.7343
+INFO:2025-03-04 20:57:30,307: - node_classifier - : epoch 4
+INFO:2025-03-04 20:57:30,367: - node_classifier - : Train: 0.7846, Test: 0.7860
+INFO:2025-03-04 20:57:30,368: - node_classifier - : epoch 5
+INFO:2025-03-04 20:57:30,432: - node_classifier - : Train: 0.7977, Test: 0.8081
+INFO:2025-03-04 20:57:30,433: - node_classifier - : epoch 6
+INFO:2025-03-04 20:57:30,492: - node_classifier - : Train: 0.8121, Test: 0.8044
+INFO:2025-03-04 20:57:30,492: - node_classifier - : epoch 7
+INFO:2025-03-04 20:57:30,555: - node_classifier - : Train: 0.8285, Test: 0.8118
+INFO:2025-03-04 20:57:30,555: - node_classifier - : epoch 8
+INFO:2025-03-04 20:57:30,614: - node_classifier - : Train: 0.8441, Test: 0.8229
+INFO:2025-03-04 20:57:30,615: - node_classifier - : epoch 9
+INFO:2025-03-04 20:57:30,676: - node_classifier - : Train: 0.8588, Test: 0.8266
+INFO:2025-03-04 20:57:30,676: - node_classifier - : epoch 10
+INFO:2025-03-04 20:57:30,737: - node_classifier - : Train: 0.8638, Test: 0.8339
+INFO:2025-03-04 20:57:30,737: - node_classifier - : epoch 11
+INFO:2025-03-04 20:57:30,800: - node_classifier - : Train: 0.8629, Test: 0.8339
+INFO:2025-03-04 20:57:30,800: - node_classifier - : epoch 12
+INFO:2025-03-04 20:57:30,857: - node_classifier - : Train: 0.8769, Test: 0.8155
+INFO:2025-03-04 20:57:30,858: - node_classifier - : epoch 13
+INFO:2025-03-04 20:57:30,918: - node_classifier - : Train: 0.8646, Test: 0.8450
+INFO:2025-03-04 20:57:30,919: - node_classifier - : epoch 14
+INFO:2025-03-04 20:57:30,980: - node_classifier - : Train: 0.8744, Test: 0.8376
+INFO:2025-03-04 20:57:30,981: - node_classifier - : epoch 15
+INFO:2025-03-04 20:57:31,043: - node_classifier - : Train: 0.8810, Test: 0.8266
+INFO:2025-03-04 20:57:31,043: - node_classifier - : epoch 16
+INFO:2025-03-04 20:57:31,105: - node_classifier - : Train: 0.8753, Test: 0.8303
+INFO:2025-03-04 20:57:31,106: - node_classifier - : epoch 17
+INFO:2025-03-04 20:57:31,162: - node_classifier - : Train: 0.8818, Test: 0.8303
+INFO:2025-03-04 20:57:31,162: - node_classifier - : epoch 18
+INFO:2025-03-04 20:57:31,219: - node_classifier - : Train: 0.8736, Test: 0.8303
+INFO:2025-03-04 20:57:31,219: - node_classifier - : epoch 19
+INFO:2025-03-04 20:57:31,275: - node_classifier - : Train: 0.8851, Test: 0.8413
+INFO:2025-03-04 20:57:31,276: - node_classifier - : epoch 20
+INFO:2025-03-04 20:57:31,332: - node_classifier - : Train: 0.8843, Test: 0.8524
+INFO:2025-03-04 20:57:31,333: - node_classifier - : epoch 21
+INFO:2025-03-04 20:57:31,394: - node_classifier - : Train: 0.8847, Test: 0.8487
+INFO:2025-03-04 20:57:31,395: - node_classifier - : epoch 22
+INFO:2025-03-04 20:57:31,450: - node_classifier - : Train: 0.8851, Test: 0.8413
+INFO:2025-03-04 20:57:31,451: - node_classifier - : epoch 23
+INFO:2025-03-04 20:57:31,506: - node_classifier - : Train: 0.8863, Test: 0.8339
+INFO:2025-03-04 20:57:31,507: - node_classifier - : epoch 24
+INFO:2025-03-04 20:57:31,564: - node_classifier - : Train: 0.8892, Test: 0.8413
+INFO:2025-03-04 20:57:31,565: - node_classifier - : epoch 25
+INFO:2025-03-04 20:57:31,622: - node_classifier - : Train: 0.8896, Test: 0.8376
+INFO:2025-03-04 20:57:31,622: - node_classifier - : epoch 26
+INFO:2025-03-04 20:57:31,680: - node_classifier - : Train: 0.8892, Test: 0.8376
+INFO:2025-03-04 20:57:31,680: - node_classifier - : epoch 27
+INFO:2025-03-04 20:57:31,739: - node_classifier - : Train: 0.8929, Test: 0.8376
+INFO:2025-03-04 20:57:31,739: - node_classifier - : epoch 28
+INFO:2025-03-04 20:57:31,797: - node_classifier - : Train: 0.8892, Test: 0.8413
+INFO:2025-03-04 20:57:31,798: - node_classifier - : epoch 29
+INFO:2025-03-04 20:57:31,854: - node_classifier - : Train: 0.8933, Test: 0.8376
+INFO:2025-03-04 20:57:31,854: - node_classifier - : epoch 30
+INFO:2025-03-04 20:57:31,909: - node_classifier - : Train: 0.8896, Test: 0.8303
+INFO:2025-03-04 20:57:31,910: - node_classifier - : epoch 31
+INFO:2025-03-04 20:57:31,968: - node_classifier - : Train: 0.8945, Test: 0.8450
+INFO:2025-03-04 20:57:31,969: - node_classifier - : epoch 32
+INFO:2025-03-04 20:57:32,026: - node_classifier - : Train: 0.8925, Test: 0.8413
+INFO:2025-03-04 20:57:32,026: - node_classifier - : epoch 33
+INFO:2025-03-04 20:57:32,082: - node_classifier - : Train: 0.8958, Test: 0.8450
+INFO:2025-03-04 20:57:32,082: - node_classifier - : epoch 34
+INFO:2025-03-04 20:57:32,138: - node_classifier - : Train: 0.8982, Test: 0.8450
+INFO:2025-03-04 20:57:32,138: - node_classifier - : epoch 35
+INFO:2025-03-04 20:57:32,199: - node_classifier - : Train: 0.8921, Test: 0.8561
+INFO:2025-03-04 20:57:32,199: - node_classifier - : epoch 36
+INFO:2025-03-04 20:57:32,253: - node_classifier - : Train: 0.8933, Test: 0.8266
+INFO:2025-03-04 20:57:32,254: - node_classifier - : epoch 37
+INFO:2025-03-04 20:57:32,312: - node_classifier - : Train: 0.8929, Test: 0.8450
+INFO:2025-03-04 20:57:32,313: - node_classifier - : epoch 38
+INFO:2025-03-04 20:57:32,367: - node_classifier - : Train: 0.8954, Test: 0.8487
+INFO:2025-03-04 20:57:32,367: - node_classifier - : epoch 39
+INFO:2025-03-04 20:57:32,425: - node_classifier - : Train: 0.8913, Test: 0.8487
+INFO:2025-03-04 20:57:32,425: - node_classifier - : epoch 40
+INFO:2025-03-04 20:57:32,480: - node_classifier - : Train: 0.8974, Test: 0.8487
+INFO:2025-03-04 20:57:32,481: - node_classifier - : epoch 41
+INFO:2025-03-04 20:57:32,534: - node_classifier - : Train: 0.8913, Test: 0.8413
+INFO:2025-03-04 20:57:32,535: - node_classifier - : epoch 42
+INFO:2025-03-04 20:57:32,589: - node_classifier - : Train: 0.8958, Test: 0.8339
+INFO:2025-03-04 20:57:32,590: - node_classifier - : epoch 43
+INFO:2025-03-04 20:57:32,647: - node_classifier - : Train: 0.8954, Test: 0.8450
+INFO:2025-03-04 20:57:32,648: - node_classifier - : epoch 44
+INFO:2025-03-04 20:57:32,701: - node_classifier - : Train: 0.8958, Test: 0.8524
+INFO:2025-03-04 20:57:32,702: - node_classifier - : epoch 45
+INFO:2025-03-04 20:57:32,756: - node_classifier - : Train: 0.8986, Test: 0.8487
+INFO:2025-03-04 20:57:32,757: - node_classifier - : epoch 46
+INFO:2025-03-04 20:57:32,815: - node_classifier - : Train: 0.8978, Test: 0.8376
+INFO:2025-03-04 20:57:32,815: - node_classifier - : epoch 47
+INFO:2025-03-04 20:57:32,872: - node_classifier - : Train: 0.8974, Test: 0.8339
+INFO:2025-03-04 20:57:32,872: - node_classifier - : epoch 48
+INFO:2025-03-04 20:57:32,928: - node_classifier - : Train: 0.8896, Test: 0.8450
+INFO:2025-03-04 20:57:32,929: - node_classifier - : epoch 49
+INFO:2025-03-04 20:57:32,990: - node_classifier - : Train: 0.8966, Test: 0.8450
+INFO:2025-03-04 20:57:32,990: - node_classifier - : epoch 50
+INFO:2025-03-04 20:57:33,049: - node_classifier - : Train: 0.8962, Test: 0.8561
+INFO:2025-03-04 20:57:33,050: - node_classifier - : epoch 51
+INFO:2025-03-04 20:57:33,107: - node_classifier - : Train: 0.8929, Test: 0.8450
+INFO:2025-03-04 20:57:33,107: - node_classifier - : epoch 52
+INFO:2025-03-04 20:57:33,171: - node_classifier - : Train: 0.9007, Test: 0.8487
+INFO:2025-03-04 20:57:33,172: - node_classifier - : epoch 53
+INFO:2025-03-04 20:57:33,230: - node_classifier - : Train: 0.8933, Test: 0.8303
+INFO:2025-03-04 20:57:33,230: - node_classifier - : epoch 54
+INFO:2025-03-04 20:57:33,287: - node_classifier - : Train: 0.9003, Test: 0.8413
+INFO:2025-03-04 20:57:33,287: - node_classifier - : epoch 55
+INFO:2025-03-04 20:57:33,344: - node_classifier - : Train: 0.8982, Test: 0.8561
+INFO:2025-03-04 20:57:33,344: - node_classifier - : epoch 56
+INFO:2025-03-04 20:57:33,403: - node_classifier - : Train: 0.9015, Test: 0.8561
+INFO:2025-03-04 20:57:33,405: - node_classifier - : epoch 57
+INFO:2025-03-04 20:57:33,466: - node_classifier - : Train: 0.8991, Test: 0.8450
+INFO:2025-03-04 20:57:33,466: - node_classifier - : epoch 58
+INFO:2025-03-04 20:57:33,519: - node_classifier - : Train: 0.8970, Test: 0.8413
+INFO:2025-03-04 20:57:33,519: - node_classifier - : epoch 59
+INFO:2025-03-04 20:57:33,575: - node_classifier - : Train: 0.9003, Test: 0.8487
+INFO:2025-03-04 20:57:33,575: - node_classifier - : epoch 60
+INFO:2025-03-04 20:57:33,630: - node_classifier - : Train: 0.8991, Test: 0.8487
+INFO:2025-03-04 20:57:33,631: - node_classifier - : epoch 61
+INFO:2025-03-04 20:57:33,694: - node_classifier - : Train: 0.8978, Test: 0.8303
+INFO:2025-03-04 20:57:33,694: - node_classifier - : epoch 62
+INFO:2025-03-04 20:57:33,754: - node_classifier - : Train: 0.8982, Test: 0.8561
+INFO:2025-03-04 20:57:33,755: - node_classifier - : epoch 63
+INFO:2025-03-04 20:57:33,811: - node_classifier - : Train: 0.8986, Test: 0.8561
+INFO:2025-03-04 20:57:33,811: - node_classifier - : epoch 64
+INFO:2025-03-04 20:57:33,871: - node_classifier - : Train: 0.8958, Test: 0.8524
+INFO:2025-03-04 20:57:33,872: - node_classifier - : epoch 65
+INFO:2025-03-04 20:57:33,928: - node_classifier - : Train: 0.8999, Test: 0.8303
+INFO:2025-03-04 20:57:33,929: - node_classifier - : epoch 66
+INFO:2025-03-04 20:57:33,983: - node_classifier - : Train: 0.8986, Test: 0.8561
+INFO:2025-03-04 20:57:33,983: - node_classifier - : epoch 67
+INFO:2025-03-04 20:57:34,037: - node_classifier - : Train: 0.9023, Test: 0.8561
+INFO:2025-03-04 20:57:34,037: - node_classifier - : epoch 68
+INFO:2025-03-04 20:57:34,091: - node_classifier - : Train: 0.8991, Test: 0.8524
+INFO:2025-03-04 20:57:34,091: - node_classifier - : epoch 69
+INFO:2025-03-04 20:57:34,146: - node_classifier - : Train: 0.9007, Test: 0.8450
+INFO:2025-03-04 20:57:34,147: - node_classifier - : epoch 70
+INFO:2025-03-04 20:57:34,202: - node_classifier - : Train: 0.9023, Test: 0.8487
+INFO:2025-03-04 20:57:34,202: - node_classifier - : epoch 71
+INFO:2025-03-04 20:57:34,260: - node_classifier - : Train: 0.8970, Test: 0.8487
+INFO:2025-03-04 20:57:34,261: - node_classifier - : epoch 72
+INFO:2025-03-04 20:57:34,315: - node_classifier - : Train: 0.9044, Test: 0.8413
+INFO:2025-03-04 20:57:34,316: - node_classifier - : epoch 73
+INFO:2025-03-04 20:57:34,372: - node_classifier - : Train: 0.9019, Test: 0.8413
+INFO:2025-03-04 20:57:34,372: - node_classifier - : epoch 74
+INFO:2025-03-04 20:57:34,430: - node_classifier - : Train: 0.8995, Test: 0.8450
+INFO:2025-03-04 20:57:34,430: - node_classifier - : epoch 75
+INFO:2025-03-04 20:57:34,489: - node_classifier - : Train: 0.8974, Test: 0.8339
+INFO:2025-03-04 20:57:34,489: - node_classifier - : epoch 76
+INFO:2025-03-04 20:57:34,551: - node_classifier - : Train: 0.8925, Test: 0.8487
+INFO:2025-03-04 20:57:34,551: - node_classifier - : epoch 77
+INFO:2025-03-04 20:57:34,606: - node_classifier - : Train: 0.8982, Test: 0.8450
+INFO:2025-03-04 20:57:34,607: - node_classifier - : epoch 78
+INFO:2025-03-04 20:57:34,666: - node_classifier - : Train: 0.8982, Test: 0.8598
+INFO:2025-03-04 20:57:34,666: - node_classifier - : epoch 79
+INFO:2025-03-04 20:57:34,724: - node_classifier - : Train: 0.8986, Test: 0.8524
+INFO:2025-03-04 20:57:34,725: - node_classifier - : epoch 80
+INFO:2025-03-04 20:57:34,783: - node_classifier - : Train: 0.9023, Test: 0.8487
+INFO:2025-03-04 20:57:34,784: - node_classifier - : epoch 81
+INFO:2025-03-04 20:57:34,840: - node_classifier - : Train: 0.8982, Test: 0.8598
+INFO:2025-03-04 20:57:34,840: - node_classifier - : epoch 82
+INFO:2025-03-04 20:57:34,896: - node_classifier - : Train: 0.9056, Test: 0.8450
+INFO:2025-03-04 20:57:34,897: - node_classifier - : epoch 83
+INFO:2025-03-04 20:57:34,953: - node_classifier - : Train: 0.8978, Test: 0.8376
+INFO:2025-03-04 20:57:34,954: - node_classifier - : epoch 84
+INFO:2025-03-04 20:57:35,009: - node_classifier - : Train: 0.9056, Test: 0.8450
+INFO:2025-03-04 20:57:35,009: - node_classifier - : epoch 85
+INFO:2025-03-04 20:57:35,066: - node_classifier - : Train: 0.8999, Test: 0.8524
+INFO:2025-03-04 20:57:35,066: - node_classifier - : epoch 86
+INFO:2025-03-04 20:57:35,122: - node_classifier - : Train: 0.9007, Test: 0.8376
+INFO:2025-03-04 20:57:35,123: - node_classifier - : epoch 87
+INFO:2025-03-04 20:57:35,181: - node_classifier - : Train: 0.9044, Test: 0.8561
+INFO:2025-03-04 20:57:35,181: - node_classifier - : epoch 88
+INFO:2025-03-04 20:57:35,238: - node_classifier - : Train: 0.9015, Test: 0.8487
+INFO:2025-03-04 20:57:35,239: - node_classifier - : epoch 89
+INFO:2025-03-04 20:57:35,300: - node_classifier - : Train: 0.9023, Test: 0.8561
+INFO:2025-03-04 20:57:35,301: - node_classifier - : epoch 90
+INFO:2025-03-04 20:57:35,360: - node_classifier - : Train: 0.8941, Test: 0.8266
+INFO:2025-03-04 20:57:35,361: - node_classifier - : epoch 91
+INFO:2025-03-04 20:57:35,422: - node_classifier - : Train: 0.9011, Test: 0.8450
+INFO:2025-03-04 20:57:35,423: - node_classifier - : epoch 92
+INFO:2025-03-04 20:57:35,481: - node_classifier - : Train: 0.8945, Test: 0.8339
+INFO:2025-03-04 20:57:35,481: - node_classifier - : epoch 93
+INFO:2025-03-04 20:57:35,539: - node_classifier - : Train: 0.9032, Test: 0.8266
+INFO:2025-03-04 20:57:35,539: - node_classifier - : epoch 94
+INFO:2025-03-04 20:57:35,593: - node_classifier - : Train: 0.9027, Test: 0.8376
+INFO:2025-03-04 20:57:35,593: - node_classifier - : epoch 95
+INFO:2025-03-04 20:57:35,652: - node_classifier - : Train: 0.8986, Test: 0.8303
+INFO:2025-03-04 20:57:35,653: - node_classifier - : epoch 96
+INFO:2025-03-04 20:57:35,710: - node_classifier - : Train: 0.9019, Test: 0.8376
+INFO:2025-03-04 20:57:35,711: - node_classifier - : epoch 97
+INFO:2025-03-04 20:57:35,766: - node_classifier - : Train: 0.8995, Test: 0.8487
+INFO:2025-03-04 20:57:35,766: - node_classifier - : epoch 98
+INFO:2025-03-04 20:57:35,824: - node_classifier - : Train: 0.9032, Test: 0.8376
+INFO:2025-03-04 20:57:35,825: - node_classifier - : epoch 99
+INFO:2025-03-04 20:57:35,884: - node_classifier - : Train: 0.9023, Test: 0.8339
+INFO:2025-03-04 20:57:35,898: - ExpGraphInfluenceFunction - : Model training time: 6.549288511276245
+INFO:2025-03-04 20:57:35,899: - ExpGraphInfluenceFunction - : model evaluation
+DEBUG:2025-03-04 20:57:35,899: - node_classifier - : generating posteriors
+INFO:2025-03-04 20:57:35,943: - ExpGraphInfluenceFunction - : Evaluation cost 0.043621063232421875 seconds.
+INFO:2025-03-04 20:57:35,944: - ExpGraphInfluenceFunction - : Final Test F1: 0.8339483394833949
+INFO:2025-03-04 20:57:35,945: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8339483394833949
+INFO:2025-03-04 20:57:35,945: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8339483394833949
+INFO:2025-03-04 20:57:35,945: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8339483394833949
+DEBUG:2025-03-04 20:57:36,099: - node_classifier - : generating posteriors
+INFO:2025-03-04 20:57:36,140: - ExpGraphInfluenceFunction - : Run 1.000000
+INFO:2025-03-04 20:57:36,141: - ExpGraphInfluenceFunction - : training target models, run 1
+INFO:2025-03-04 20:57:36,141: - node_classifier - : training model
+INFO:2025-03-04 20:57:36,142: - node_classifier - : generate train loader
+INFO:2025-03-04 20:57:36,145: - node_classifier - : generate train loader finish
+INFO:2025-03-04 20:57:36,145: - node_classifier - : epoch 0
+INFO:2025-03-04 20:57:36,201: - node_classifier - : Train: 0.4276, Test: 0.4133
+INFO:2025-03-04 20:57:36,202: - node_classifier - : epoch 1
+INFO:2025-03-04 20:57:36,261: - node_classifier - : Train: 0.4518, Test: 0.4317
+INFO:2025-03-04 20:57:36,262: - node_classifier - : epoch 2
+INFO:2025-03-04 20:57:36,319: - node_classifier - : Train: 0.5835, Test: 0.5646
+INFO:2025-03-04 20:57:36,319: - node_classifier - : epoch 3
+INFO:2025-03-04 20:57:36,377: - node_classifier - : Train: 0.7673, Test: 0.7897
+INFO:2025-03-04 20:57:36,377: - node_classifier - : epoch 4
+INFO:2025-03-04 20:57:36,436: - node_classifier - : Train: 0.8211, Test: 0.8266
+INFO:2025-03-04 20:57:36,437: - node_classifier - : epoch 5
+INFO:2025-03-04 20:57:36,494: - node_classifier - : Train: 0.8465, Test: 0.8450
+INFO:2025-03-04 20:57:36,494: - node_classifier - : epoch 6
+INFO:2025-03-04 20:57:36,553: - node_classifier - : Train: 0.8560, Test: 0.8450
+INFO:2025-03-04 20:57:36,553: - node_classifier - : epoch 7
+INFO:2025-03-04 20:57:36,615: - node_classifier - : Train: 0.8646, Test: 0.8487
+INFO:2025-03-04 20:57:36,616: - node_classifier - : epoch 8
+INFO:2025-03-04 20:57:36,675: - node_classifier - : Train: 0.8695, Test: 0.8376
+INFO:2025-03-04 20:57:36,676: - node_classifier - : epoch 9
+INFO:2025-03-04 20:57:36,735: - node_classifier - : Train: 0.8670, Test: 0.8413
+INFO:2025-03-04 20:57:36,736: - node_classifier - : epoch 10
+INFO:2025-03-04 20:57:36,795: - node_classifier - : Train: 0.8736, Test: 0.8266
+INFO:2025-03-04 20:57:36,796: - node_classifier - : epoch 11
+INFO:2025-03-04 20:57:36,854: - node_classifier - : Train: 0.8744, Test: 0.8155
+INFO:2025-03-04 20:57:36,854: - node_classifier - : epoch 12
+INFO:2025-03-04 20:57:36,911: - node_classifier - : Train: 0.8765, Test: 0.8561
+INFO:2025-03-04 20:57:36,911: - node_classifier - : epoch 13
+INFO:2025-03-04 20:57:36,973: - node_classifier - : Train: 0.8794, Test: 0.8450
+INFO:2025-03-04 20:57:36,973: - node_classifier - : epoch 14
+INFO:2025-03-04 20:57:37,036: - node_classifier - : Train: 0.8785, Test: 0.8229
+INFO:2025-03-04 20:57:37,037: - node_classifier - : epoch 15
+INFO:2025-03-04 20:57:37,094: - node_classifier - : Train: 0.8773, Test: 0.8524
+INFO:2025-03-04 20:57:37,094: - node_classifier - : epoch 16
+INFO:2025-03-04 20:57:37,157: - node_classifier - : Train: 0.8822, Test: 0.8413
+INFO:2025-03-04 20:57:37,157: - node_classifier - : epoch 17
+INFO:2025-03-04 20:57:37,216: - node_classifier - : Train: 0.8876, Test: 0.8266
+INFO:2025-03-04 20:57:37,217: - node_classifier - : epoch 18
+INFO:2025-03-04 20:57:37,276: - node_classifier - : Train: 0.8789, Test: 0.8303
+INFO:2025-03-04 20:57:37,276: - node_classifier - : epoch 19
+INFO:2025-03-04 20:57:37,334: - node_classifier - : Train: 0.8867, Test: 0.8450
+INFO:2025-03-04 20:57:37,335: - node_classifier - : epoch 20
+INFO:2025-03-04 20:57:37,393: - node_classifier - : Train: 0.8863, Test: 0.8339
+INFO:2025-03-04 20:57:37,393: - node_classifier - : epoch 21
+INFO:2025-03-04 20:57:37,451: - node_classifier - : Train: 0.8839, Test: 0.8303
+INFO:2025-03-04 20:57:37,452: - node_classifier - : epoch 22
+INFO:2025-03-04 20:57:37,511: - node_classifier - : Train: 0.8872, Test: 0.8339
+INFO:2025-03-04 20:57:37,511: - node_classifier - : epoch 23
+INFO:2025-03-04 20:57:37,571: - node_classifier - : Train: 0.8888, Test: 0.8376
+INFO:2025-03-04 20:57:37,572: - node_classifier - : epoch 24
+INFO:2025-03-04 20:57:37,635: - node_classifier - : Train: 0.8896, Test: 0.8339
+INFO:2025-03-04 20:57:37,635: - node_classifier - : epoch 25
+INFO:2025-03-04 20:57:37,698: - node_classifier - : Train: 0.8888, Test: 0.8303
+INFO:2025-03-04 20:57:37,699: - node_classifier - : epoch 26
+INFO:2025-03-04 20:57:37,758: - node_classifier - : Train: 0.8855, Test: 0.8339
+INFO:2025-03-04 20:57:37,758: - node_classifier - : epoch 27
+INFO:2025-03-04 20:57:37,819: - node_classifier - : Train: 0.8913, Test: 0.8303
+INFO:2025-03-04 20:57:37,819: - node_classifier - : epoch 28
+INFO:2025-03-04 20:57:37,878: - node_classifier - : Train: 0.8888, Test: 0.8339
+INFO:2025-03-04 20:57:37,879: - node_classifier - : epoch 29
+INFO:2025-03-04 20:57:37,937: - node_classifier - : Train: 0.8929, Test: 0.8413
+INFO:2025-03-04 20:57:37,937: - node_classifier - : epoch 30
+INFO:2025-03-04 20:57:37,994: - node_classifier - : Train: 0.8929, Test: 0.8266
+INFO:2025-03-04 20:57:37,995: - node_classifier - : epoch 31
+INFO:2025-03-04 20:57:38,071: - node_classifier - : Train: 0.8974, Test: 0.8339
+INFO:2025-03-04 20:57:38,071: - node_classifier - : epoch 32
+INFO:2025-03-04 20:57:38,134: - node_classifier - : Train: 0.8974, Test: 0.8413
+INFO:2025-03-04 20:57:38,135: - node_classifier - : epoch 33
+INFO:2025-03-04 20:57:38,196: - node_classifier - : Train: 0.8966, Test: 0.8524
+INFO:2025-03-04 20:57:38,197: - node_classifier - : epoch 34
+INFO:2025-03-04 20:57:38,260: - node_classifier - : Train: 0.8974, Test: 0.8450
+INFO:2025-03-04 20:57:38,260: - node_classifier - : epoch 35
+INFO:2025-03-04 20:57:38,323: - node_classifier - : Train: 0.8954, Test: 0.8524
+INFO:2025-03-04 20:57:38,323: - node_classifier - : epoch 36
+INFO:2025-03-04 20:57:38,388: - node_classifier - : Train: 0.8950, Test: 0.8450
+INFO:2025-03-04 20:57:38,388: - node_classifier - : epoch 37
+INFO:2025-03-04 20:57:38,452: - node_classifier - : Train: 0.8958, Test: 0.8339
+INFO:2025-03-04 20:57:38,452: - node_classifier - : epoch 38
+INFO:2025-03-04 20:57:38,513: - node_classifier - : Train: 0.9019, Test: 0.8376
+INFO:2025-03-04 20:57:38,514: - node_classifier - : epoch 39
+INFO:2025-03-04 20:57:38,575: - node_classifier - : Train: 0.8966, Test: 0.8339
+INFO:2025-03-04 20:57:38,576: - node_classifier - : epoch 40
+INFO:2025-03-04 20:57:38,638: - node_classifier - : Train: 0.8859, Test: 0.8413
+INFO:2025-03-04 20:57:38,638: - node_classifier - : epoch 41
+INFO:2025-03-04 20:57:38,712: - node_classifier - : Train: 0.8982, Test: 0.8303
+INFO:2025-03-04 20:57:38,712: - node_classifier - : epoch 42
+INFO:2025-03-04 20:57:38,780: - node_classifier - : Train: 0.8974, Test: 0.8524
+INFO:2025-03-04 20:57:38,780: - node_classifier - : epoch 43
+INFO:2025-03-04 20:57:38,841: - node_classifier - : Train: 0.8900, Test: 0.8376
+INFO:2025-03-04 20:57:38,842: - node_classifier - : epoch 44
+INFO:2025-03-04 20:57:38,901: - node_classifier - : Train: 0.8950, Test: 0.8229
+INFO:2025-03-04 20:57:38,901: - node_classifier - : epoch 45
+INFO:2025-03-04 20:57:38,965: - node_classifier - : Train: 0.8974, Test: 0.8450
+INFO:2025-03-04 20:57:38,966: - node_classifier - : epoch 46
+INFO:2025-03-04 20:57:39,027: - node_classifier - : Train: 0.8929, Test: 0.8524
+INFO:2025-03-04 20:57:39,027: - node_classifier - : epoch 47
+INFO:2025-03-04 20:57:39,089: - node_classifier - : Train: 0.8978, Test: 0.8450
+INFO:2025-03-04 20:57:39,090: - node_classifier - : epoch 48
+INFO:2025-03-04 20:57:39,149: - node_classifier - : Train: 0.8941, Test: 0.8413
+INFO:2025-03-04 20:57:39,150: - node_classifier - : epoch 49
+INFO:2025-03-04 20:57:39,209: - node_classifier - : Train: 0.8986, Test: 0.8303
+INFO:2025-03-04 20:57:39,209: - node_classifier - : epoch 50
+INFO:2025-03-04 20:57:39,269: - node_classifier - : Train: 0.8991, Test: 0.8524
+INFO:2025-03-04 20:57:39,270: - node_classifier - : epoch 51
+INFO:2025-03-04 20:57:39,331: - node_classifier - : Train: 0.8945, Test: 0.8413
+INFO:2025-03-04 20:57:39,332: - node_classifier - : epoch 52
+INFO:2025-03-04 20:57:39,395: - node_classifier - : Train: 0.8991, Test: 0.8266
+INFO:2025-03-04 20:57:39,395: - node_classifier - : epoch 53
+INFO:2025-03-04 20:57:39,463: - node_classifier - : Train: 0.8954, Test: 0.8376
+INFO:2025-03-04 20:57:39,463: - node_classifier - : epoch 54
+INFO:2025-03-04 20:57:39,524: - node_classifier - : Train: 0.8966, Test: 0.8339
+INFO:2025-03-04 20:57:39,525: - node_classifier - : epoch 55
+INFO:2025-03-04 20:57:39,592: - node_classifier - : Train: 0.8974, Test: 0.8303
+INFO:2025-03-04 20:57:39,592: - node_classifier - : epoch 56
+INFO:2025-03-04 20:57:39,660: - node_classifier - : Train: 0.8991, Test: 0.8487
+INFO:2025-03-04 20:57:39,661: - node_classifier - : epoch 57
+INFO:2025-03-04 20:57:39,729: - node_classifier - : Train: 0.9003, Test: 0.8450
+INFO:2025-03-04 20:57:39,730: - node_classifier - : epoch 58
+INFO:2025-03-04 20:57:39,796: - node_classifier - : Train: 0.9015, Test: 0.8450
+INFO:2025-03-04 20:57:39,797: - node_classifier - : epoch 59
+INFO:2025-03-04 20:57:39,867: - node_classifier - : Train: 0.9007, Test: 0.8413
+INFO:2025-03-04 20:57:39,867: - node_classifier - : epoch 60
+INFO:2025-03-04 20:57:39,938: - node_classifier - : Train: 0.9027, Test: 0.8524
+INFO:2025-03-04 20:57:39,938: - node_classifier - : epoch 61
+INFO:2025-03-04 20:57:40,002: - node_classifier - : Train: 0.9069, Test: 0.8708
+INFO:2025-03-04 20:57:40,003: - node_classifier - : epoch 62
+INFO:2025-03-04 20:57:40,069: - node_classifier - : Train: 0.8954, Test: 0.8376
+INFO:2025-03-04 20:57:40,069: - node_classifier - : epoch 63
+INFO:2025-03-04 20:57:40,131: - node_classifier - : Train: 0.8958, Test: 0.8266
+INFO:2025-03-04 20:57:40,131: - node_classifier - : epoch 64
+INFO:2025-03-04 20:57:40,188: - node_classifier - : Train: 0.8986, Test: 0.8487
+INFO:2025-03-04 20:57:40,189: - node_classifier - : epoch 65
+INFO:2025-03-04 20:57:40,254: - node_classifier - : Train: 0.8941, Test: 0.8413
+INFO:2025-03-04 20:57:40,255: - node_classifier - : epoch 66
+INFO:2025-03-04 20:57:40,319: - node_classifier - : Train: 0.9007, Test: 0.8413
+INFO:2025-03-04 20:57:40,319: - node_classifier - : epoch 67
+INFO:2025-03-04 20:57:40,387: - node_classifier - : Train: 0.8925, Test: 0.8118
+INFO:2025-03-04 20:57:40,387: - node_classifier - : epoch 68
+INFO:2025-03-04 20:57:40,452: - node_classifier - : Train: 0.9052, Test: 0.8450
+INFO:2025-03-04 20:57:40,453: - node_classifier - : epoch 69
+INFO:2025-03-04 20:57:40,516: - node_classifier - : Train: 0.8991, Test: 0.8524
+INFO:2025-03-04 20:57:40,516: - node_classifier - : epoch 70
+INFO:2025-03-04 20:57:40,582: - node_classifier - : Train: 0.8974, Test: 0.8376
+INFO:2025-03-04 20:57:40,582: - node_classifier - : epoch 71
+INFO:2025-03-04 20:57:40,651: - node_classifier - : Train: 0.8982, Test: 0.8339
+INFO:2025-03-04 20:57:40,652: - node_classifier - : epoch 72
+INFO:2025-03-04 20:57:40,718: - node_classifier - : Train: 0.8929, Test: 0.8450
+INFO:2025-03-04 20:57:40,718: - node_classifier - : epoch 73
+INFO:2025-03-04 20:57:40,784: - node_classifier - : Train: 0.9032, Test: 0.8450
+INFO:2025-03-04 20:57:40,785: - node_classifier - : epoch 74
+INFO:2025-03-04 20:57:40,848: - node_classifier - : Train: 0.8962, Test: 0.8561
+INFO:2025-03-04 20:57:40,848: - node_classifier - : epoch 75
+INFO:2025-03-04 20:57:40,912: - node_classifier - : Train: 0.9089, Test: 0.8339
+INFO:2025-03-04 20:57:40,913: - node_classifier - : epoch 76
+INFO:2025-03-04 20:57:40,976: - node_classifier - : Train: 0.9048, Test: 0.8413
+INFO:2025-03-04 20:57:40,977: - node_classifier - : epoch 77
+INFO:2025-03-04 20:57:41,035: - node_classifier - : Train: 0.9011, Test: 0.8376
+INFO:2025-03-04 20:57:41,036: - node_classifier - : epoch 78
+INFO:2025-03-04 20:57:41,096: - node_classifier - : Train: 0.8995, Test: 0.8339
+INFO:2025-03-04 20:57:41,097: - node_classifier - : epoch 79
+INFO:2025-03-04 20:57:41,160: - node_classifier - : Train: 0.9007, Test: 0.8450
+INFO:2025-03-04 20:57:41,161: - node_classifier - : epoch 80
+INFO:2025-03-04 20:57:41,228: - node_classifier - : Train: 0.9023, Test: 0.8598
+INFO:2025-03-04 20:57:41,228: - node_classifier - : epoch 81
+INFO:2025-03-04 20:57:41,294: - node_classifier - : Train: 0.9040, Test: 0.8376
+INFO:2025-03-04 20:57:41,294: - node_classifier - : epoch 82
+INFO:2025-03-04 20:57:41,361: - node_classifier - : Train: 0.8974, Test: 0.8376
+INFO:2025-03-04 20:57:41,362: - node_classifier - : epoch 83
+INFO:2025-03-04 20:57:41,433: - node_classifier - : Train: 0.9015, Test: 0.8339
+INFO:2025-03-04 20:57:41,433: - node_classifier - : epoch 84
+INFO:2025-03-04 20:57:41,496: - node_classifier - : Train: 0.9007, Test: 0.8487
+INFO:2025-03-04 20:57:41,498: - node_classifier - : epoch 85
+INFO:2025-03-04 20:57:41,565: - node_classifier - : Train: 0.9015, Test: 0.8524
+INFO:2025-03-04 20:57:41,566: - node_classifier - : epoch 86
+INFO:2025-03-04 20:57:41,630: - node_classifier - : Train: 0.8991, Test: 0.8450
+INFO:2025-03-04 20:57:41,630: - node_classifier - : epoch 87
+INFO:2025-03-04 20:57:41,692: - node_classifier - : Train: 0.9044, Test: 0.8487
+INFO:2025-03-04 20:57:41,693: - node_classifier - : epoch 88
+INFO:2025-03-04 20:57:41,755: - node_classifier - : Train: 0.9040, Test: 0.8524
+INFO:2025-03-04 20:57:41,756: - node_classifier - : epoch 89
+INFO:2025-03-04 20:57:41,821: - node_classifier - : Train: 0.8982, Test: 0.8450
+INFO:2025-03-04 20:57:41,822: - node_classifier - : epoch 90
+INFO:2025-03-04 20:57:41,887: - node_classifier - : Train: 0.9015, Test: 0.8376
+INFO:2025-03-04 20:57:41,887: - node_classifier - : epoch 91
+INFO:2025-03-04 20:57:41,953: - node_classifier - : Train: 0.9044, Test: 0.8524
+INFO:2025-03-04 20:57:41,953: - node_classifier - : epoch 92
+INFO:2025-03-04 20:57:42,021: - node_classifier - : Train: 0.9015, Test: 0.8339
+INFO:2025-03-04 20:57:42,022: - node_classifier - : epoch 93
+INFO:2025-03-04 20:57:42,087: - node_classifier - : Train: 0.9036, Test: 0.8413
+INFO:2025-03-04 20:57:42,087: - node_classifier - : epoch 94
+INFO:2025-03-04 20:57:42,152: - node_classifier - : Train: 0.8986, Test: 0.8487
+INFO:2025-03-04 20:57:42,152: - node_classifier - : epoch 95
+INFO:2025-03-04 20:57:42,215: - node_classifier - : Train: 0.9056, Test: 0.8376
+INFO:2025-03-04 20:57:42,215: - node_classifier - : epoch 96
+INFO:2025-03-04 20:57:42,275: - node_classifier - : Train: 0.9003, Test: 0.8192
+INFO:2025-03-04 20:57:42,275: - node_classifier - : epoch 97
+INFO:2025-03-04 20:57:42,335: - node_classifier - : Train: 0.8986, Test: 0.8376
+INFO:2025-03-04 20:57:42,336: - node_classifier - : epoch 98
+INFO:2025-03-04 20:57:42,403: - node_classifier - : Train: 0.9036, Test: 0.8450
+INFO:2025-03-04 20:57:42,404: - node_classifier - : epoch 99
+INFO:2025-03-04 20:57:42,464: - node_classifier - : Train: 0.8929, Test: 0.8303
+INFO:2025-03-04 20:57:42,477: - ExpGraphInfluenceFunction - : Model training time: 6.33576512336731
+INFO:2025-03-04 20:57:42,477: - ExpGraphInfluenceFunction - : model evaluation
+DEBUG:2025-03-04 20:57:42,478: - node_classifier - : generating posteriors
+INFO:2025-03-04 20:57:42,520: - ExpGraphInfluenceFunction - : Evaluation cost 0.04297327995300293 seconds.
+INFO:2025-03-04 20:57:42,520: - ExpGraphInfluenceFunction - : Final Test F1: 0.8302583025830258
+INFO:2025-03-04 20:57:42,521: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8302583025830258
+INFO:2025-03-04 20:57:42,521: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8302583025830258
+INFO:2025-03-04 20:57:42,522: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8302583025830258
+DEBUG:2025-03-04 20:57:42,720: - node_classifier - : generating posteriors
+INFO:2025-03-04 20:57:42,762: - ExpGraphInfluenceFunction - : Run 2.000000
+INFO:2025-03-04 20:57:42,762: - ExpGraphInfluenceFunction - : training target models, run 2
+INFO:2025-03-04 20:57:42,763: - node_classifier - : training model
+INFO:2025-03-04 20:57:42,763: - node_classifier - : generate train loader
+INFO:2025-03-04 20:57:42,767: - node_classifier - : generate train loader finish
+INFO:2025-03-04 20:57:42,767: - node_classifier - : epoch 0
+INFO:2025-03-04 20:57:42,834: - node_classifier - : Train: 0.3090, Test: 0.3137
+INFO:2025-03-04 20:57:42,834: - node_classifier - : epoch 1
+INFO:2025-03-04 20:57:42,901: - node_classifier - : Train: 0.3853, Test: 0.3764
+INFO:2025-03-04 20:57:42,902: - node_classifier - : epoch 2
+INFO:2025-03-04 20:57:42,968: - node_classifier - : Train: 0.5773, Test: 0.5609
+INFO:2025-03-04 20:57:42,968: - node_classifier - : epoch 3
+INFO:2025-03-04 20:57:43,025: - node_classifier - : Train: 0.7226, Test: 0.7232
+INFO:2025-03-04 20:57:43,026: - node_classifier - : epoch 4
+INFO:2025-03-04 20:57:43,094: - node_classifier - : Train: 0.7727, Test: 0.7897
+INFO:2025-03-04 20:57:43,094: - node_classifier - : epoch 5
+INFO:2025-03-04 20:57:43,162: - node_classifier - : Train: 0.8125, Test: 0.8376
+INFO:2025-03-04 20:57:43,162: - node_classifier - : epoch 6
+INFO:2025-03-04 20:57:43,225: - node_classifier - : Train: 0.8338, Test: 0.8376
+INFO:2025-03-04 20:57:43,226: - node_classifier - : epoch 7
+INFO:2025-03-04 20:57:43,288: - node_classifier - : Train: 0.8482, Test: 0.8303
+INFO:2025-03-04 20:57:43,289: - node_classifier - : epoch 8
+INFO:2025-03-04 20:57:43,352: - node_classifier - : Train: 0.8609, Test: 0.8303
+INFO:2025-03-04 20:57:43,353: - node_classifier - : epoch 9
+INFO:2025-03-04 20:57:43,423: - node_classifier - : Train: 0.8605, Test: 0.8339
+INFO:2025-03-04 20:57:43,424: - node_classifier - : epoch 10
+INFO:2025-03-04 20:57:43,488: - node_classifier - : Train: 0.8629, Test: 0.8266
+INFO:2025-03-04 20:57:43,488: - node_classifier - : epoch 11
+INFO:2025-03-04 20:57:43,559: - node_classifier - : Train: 0.8666, Test: 0.8303
+INFO:2025-03-04 20:57:43,560: - node_classifier - : epoch 12
+INFO:2025-03-04 20:57:43,621: - node_classifier - : Train: 0.8658, Test: 0.8450
+INFO:2025-03-04 20:57:43,621: - node_classifier - : epoch 13
+INFO:2025-03-04 20:57:43,686: - node_classifier - : Train: 0.8703, Test: 0.8192
+INFO:2025-03-04 20:57:43,687: - node_classifier - : epoch 14
+INFO:2025-03-04 20:57:43,756: - node_classifier - : Train: 0.8687, Test: 0.8303
+INFO:2025-03-04 20:57:43,757: - node_classifier - : epoch 15
+INFO:2025-03-04 20:57:43,824: - node_classifier - : Train: 0.8744, Test: 0.8303
+INFO:2025-03-04 20:57:43,824: - node_classifier - : epoch 16
+INFO:2025-03-04 20:57:43,887: - node_classifier - : Train: 0.8810, Test: 0.8229
+INFO:2025-03-04 20:57:43,888: - node_classifier - : epoch 17
+INFO:2025-03-04 20:57:43,948: - node_classifier - : Train: 0.8773, Test: 0.8339
+INFO:2025-03-04 20:57:43,949: - node_classifier - : epoch 18
+INFO:2025-03-04 20:57:44,012: - node_classifier - : Train: 0.8826, Test: 0.8266
+INFO:2025-03-04 20:57:44,013: - node_classifier - : epoch 19
+INFO:2025-03-04 20:57:44,075: - node_classifier - : Train: 0.8818, Test: 0.8229
+INFO:2025-03-04 20:57:44,075: - node_classifier - : epoch 20
+INFO:2025-03-04 20:57:44,135: - node_classifier - : Train: 0.8765, Test: 0.8303
+INFO:2025-03-04 20:57:44,136: - node_classifier - : epoch 21
+INFO:2025-03-04 20:57:44,201: - node_classifier - : Train: 0.8835, Test: 0.8192
+INFO:2025-03-04 20:57:44,201: - node_classifier - : epoch 22
+INFO:2025-03-04 20:57:44,263: - node_classifier - : Train: 0.8822, Test: 0.8229
+INFO:2025-03-04 20:57:44,263: - node_classifier - : epoch 23
+INFO:2025-03-04 20:57:44,328: - node_classifier - : Train: 0.8831, Test: 0.8413
+INFO:2025-03-04 20:57:44,328: - node_classifier - : epoch 24
+INFO:2025-03-04 20:57:44,394: - node_classifier - : Train: 0.8884, Test: 0.8303
+INFO:2025-03-04 20:57:44,395: - node_classifier - : epoch 25
+INFO:2025-03-04 20:57:44,458: - node_classifier - : Train: 0.8884, Test: 0.8376
+INFO:2025-03-04 20:57:44,459: - node_classifier - : epoch 26
+INFO:2025-03-04 20:57:44,526: - node_classifier - : Train: 0.8896, Test: 0.8450
+INFO:2025-03-04 20:57:44,527: - node_classifier - : epoch 27
+INFO:2025-03-04 20:57:44,588: - node_classifier - : Train: 0.8872, Test: 0.8524
+INFO:2025-03-04 20:57:44,589: - node_classifier - : epoch 28
+INFO:2025-03-04 20:57:44,668: - node_classifier - : Train: 0.8896, Test: 0.8450
+INFO:2025-03-04 20:57:44,668: - node_classifier - : epoch 29
+INFO:2025-03-04 20:57:44,733: - node_classifier - : Train: 0.8929, Test: 0.8303
+INFO:2025-03-04 20:57:44,733: - node_classifier - : epoch 30
+INFO:2025-03-04 20:57:44,798: - node_classifier - : Train: 0.8872, Test: 0.8450
+INFO:2025-03-04 20:57:44,798: - node_classifier - : epoch 31
+INFO:2025-03-04 20:57:44,863: - node_classifier - : Train: 0.8950, Test: 0.8339
+INFO:2025-03-04 20:57:44,864: - node_classifier - : epoch 32
+INFO:2025-03-04 20:57:44,927: - node_classifier - : Train: 0.8945, Test: 0.8192
+INFO:2025-03-04 20:57:44,928: - node_classifier - : epoch 33
+INFO:2025-03-04 20:57:44,991: - node_classifier - : Train: 0.8908, Test: 0.8339
+INFO:2025-03-04 20:57:44,991: - node_classifier - : epoch 34
+INFO:2025-03-04 20:57:45,054: - node_classifier - : Train: 0.8991, Test: 0.8524
+INFO:2025-03-04 20:57:45,055: - node_classifier - : epoch 35
+INFO:2025-03-04 20:57:45,117: - node_classifier - : Train: 0.8954, Test: 0.8339
+INFO:2025-03-04 20:57:45,117: - node_classifier - : epoch 36
+INFO:2025-03-04 20:57:45,180: - node_classifier - : Train: 0.8908, Test: 0.8376
+INFO:2025-03-04 20:57:45,180: - node_classifier - : epoch 37
+INFO:2025-03-04 20:57:45,241: - node_classifier - : Train: 0.8937, Test: 0.8376
+INFO:2025-03-04 20:57:45,241: - node_classifier - : epoch 38
+INFO:2025-03-04 20:57:45,308: - node_classifier - : Train: 0.8925, Test: 0.8266
+INFO:2025-03-04 20:57:45,309: - node_classifier - : epoch 39
+INFO:2025-03-04 20:57:45,372: - node_classifier - : Train: 0.8925, Test: 0.8413
+INFO:2025-03-04 20:57:45,373: - node_classifier - : epoch 40
+INFO:2025-03-04 20:57:45,440: - node_classifier - : Train: 0.8962, Test: 0.8524
+INFO:2025-03-04 20:57:45,440: - node_classifier - : epoch 41
+INFO:2025-03-04 20:57:45,508: - node_classifier - : Train: 0.8978, Test: 0.8376
+INFO:2025-03-04 20:57:45,508: - node_classifier - : epoch 42
+INFO:2025-03-04 20:57:45,570: - node_classifier - : Train: 0.8925, Test: 0.8339
+INFO:2025-03-04 20:57:45,571: - node_classifier - : epoch 43
+INFO:2025-03-04 20:57:45,633: - node_classifier - : Train: 0.8941, Test: 0.8413
+INFO:2025-03-04 20:57:45,633: - node_classifier - : epoch 44
+INFO:2025-03-04 20:57:45,696: - node_classifier - : Train: 0.9019, Test: 0.8487
+INFO:2025-03-04 20:57:45,697: - node_classifier - : epoch 45
+INFO:2025-03-04 20:57:45,756: - node_classifier - : Train: 0.8966, Test: 0.8303
+INFO:2025-03-04 20:57:45,756: - node_classifier - : epoch 46
+INFO:2025-03-04 20:57:45,823: - node_classifier - : Train: 0.8937, Test: 0.8303
+INFO:2025-03-04 20:57:45,823: - node_classifier - : epoch 47
+INFO:2025-03-04 20:57:45,888: - node_classifier - : Train: 0.8945, Test: 0.8376
+INFO:2025-03-04 20:57:45,888: - node_classifier - : epoch 48
+INFO:2025-03-04 20:57:45,951: - node_classifier - : Train: 0.8945, Test: 0.8487
+INFO:2025-03-04 20:57:45,952: - node_classifier - : epoch 49
+INFO:2025-03-04 20:57:46,018: - node_classifier - : Train: 0.8941, Test: 0.8450
+INFO:2025-03-04 20:57:46,019: - node_classifier - : epoch 50
+INFO:2025-03-04 20:57:46,086: - node_classifier - : Train: 0.8974, Test: 0.8561
+INFO:2025-03-04 20:57:46,086: - node_classifier - : epoch 51
+INFO:2025-03-04 20:57:46,149: - node_classifier - : Train: 0.8991, Test: 0.8413
+INFO:2025-03-04 20:57:46,149: - node_classifier - : epoch 52
+INFO:2025-03-04 20:57:46,214: - node_classifier - : Train: 0.8945, Test: 0.8450
+INFO:2025-03-04 20:57:46,214: - node_classifier - : epoch 53
+INFO:2025-03-04 20:57:46,277: - node_classifier - : Train: 0.8954, Test: 0.8450
+INFO:2025-03-04 20:57:46,278: - node_classifier - : epoch 54
+INFO:2025-03-04 20:57:46,343: - node_classifier - : Train: 0.8917, Test: 0.8376
+INFO:2025-03-04 20:57:46,344: - node_classifier - : epoch 55
+INFO:2025-03-04 20:57:46,409: - node_classifier - : Train: 0.8937, Test: 0.8524
+INFO:2025-03-04 20:57:46,410: - node_classifier - : epoch 56
+INFO:2025-03-04 20:57:46,471: - node_classifier - : Train: 0.8937, Test: 0.8413
+INFO:2025-03-04 20:57:46,471: - node_classifier - : epoch 57
+INFO:2025-03-04 20:57:46,533: - node_classifier - : Train: 0.8995, Test: 0.8376
+INFO:2025-03-04 20:57:46,533: - node_classifier - : epoch 58
+INFO:2025-03-04 20:57:46,598: - node_classifier - : Train: 0.9003, Test: 0.8303
+INFO:2025-03-04 20:57:46,598: - node_classifier - : epoch 59
+INFO:2025-03-04 20:57:46,658: - node_classifier - : Train: 0.8904, Test: 0.8487
+INFO:2025-03-04 20:57:46,658: - node_classifier - : epoch 60
+INFO:2025-03-04 20:57:46,722: - node_classifier - : Train: 0.8929, Test: 0.8487
+INFO:2025-03-04 20:57:46,723: - node_classifier - : epoch 61
+INFO:2025-03-04 20:57:46,788: - node_classifier - : Train: 0.8962, Test: 0.8524
+INFO:2025-03-04 20:57:46,789: - node_classifier - : epoch 62
+INFO:2025-03-04 20:57:46,852: - node_classifier - : Train: 0.8921, Test: 0.8635
+INFO:2025-03-04 20:57:46,852: - node_classifier - : epoch 63
+INFO:2025-03-04 20:57:46,915: - node_classifier - : Train: 0.9003, Test: 0.8450
+INFO:2025-03-04 20:57:46,915: - node_classifier - : epoch 64
+INFO:2025-03-04 20:57:46,976: - node_classifier - : Train: 0.8945, Test: 0.8487
+INFO:2025-03-04 20:57:46,976: - node_classifier - : epoch 65
+INFO:2025-03-04 20:57:47,037: - node_classifier - : Train: 0.8982, Test: 0.8376
+INFO:2025-03-04 20:57:47,037: - node_classifier - : epoch 66
+INFO:2025-03-04 20:57:47,102: - node_classifier - : Train: 0.8966, Test: 0.8339
+INFO:2025-03-04 20:57:47,103: - node_classifier - : epoch 67
+INFO:2025-03-04 20:57:47,162: - node_classifier - : Train: 0.8929, Test: 0.8339
+INFO:2025-03-04 20:57:47,163: - node_classifier - : epoch 68
+INFO:2025-03-04 20:57:47,224: - node_classifier - : Train: 0.9023, Test: 0.8450
+INFO:2025-03-04 20:57:47,225: - node_classifier - : epoch 69
+INFO:2025-03-04 20:57:47,284: - node_classifier - : Train: 0.8966, Test: 0.8339
+INFO:2025-03-04 20:57:47,284: - node_classifier - : epoch 70
+INFO:2025-03-04 20:57:47,346: - node_classifier - : Train: 0.8974, Test: 0.8339
+INFO:2025-03-04 20:57:47,346: - node_classifier - : epoch 71
+INFO:2025-03-04 20:57:47,408: - node_classifier - : Train: 0.9019, Test: 0.8413
+INFO:2025-03-04 20:57:47,408: - node_classifier - : epoch 72
+INFO:2025-03-04 20:57:47,472: - node_classifier - : Train: 0.8958, Test: 0.8376
+INFO:2025-03-04 20:57:47,472: - node_classifier - : epoch 73
+INFO:2025-03-04 20:57:47,536: - node_classifier - : Train: 0.8978, Test: 0.8303
+INFO:2025-03-04 20:57:47,537: - node_classifier - : epoch 74
+INFO:2025-03-04 20:57:47,597: - node_classifier - : Train: 0.8954, Test: 0.8192
+INFO:2025-03-04 20:57:47,598: - node_classifier - : epoch 75
+INFO:2025-03-04 20:57:47,658: - node_classifier - : Train: 0.9015, Test: 0.8487
+INFO:2025-03-04 20:57:47,658: - node_classifier - : epoch 76
+INFO:2025-03-04 20:57:47,722: - node_classifier - : Train: 0.8991, Test: 0.8413
+INFO:2025-03-04 20:57:47,722: - node_classifier - : epoch 77
+INFO:2025-03-04 20:57:47,790: - node_classifier - : Train: 0.8966, Test: 0.8376
+INFO:2025-03-04 20:57:47,790: - node_classifier - : epoch 78
+INFO:2025-03-04 20:57:47,857: - node_classifier - : Train: 0.9044, Test: 0.8450
+INFO:2025-03-04 20:57:47,857: - node_classifier - : epoch 79
+INFO:2025-03-04 20:57:47,923: - node_classifier - : Train: 0.9044, Test: 0.8450
+INFO:2025-03-04 20:57:47,923: - node_classifier - : epoch 80
+INFO:2025-03-04 20:57:47,988: - node_classifier - : Train: 0.9027, Test: 0.8413
+INFO:2025-03-04 20:57:47,989: - node_classifier - : epoch 81
+INFO:2025-03-04 20:57:48,055: - node_classifier - : Train: 0.8991, Test: 0.8487
+INFO:2025-03-04 20:57:48,056: - node_classifier - : epoch 82
+INFO:2025-03-04 20:57:48,121: - node_classifier - : Train: 0.8982, Test: 0.8487
+INFO:2025-03-04 20:57:48,122: - node_classifier - : epoch 83
+INFO:2025-03-04 20:57:48,186: - node_classifier - : Train: 0.8950, Test: 0.8413
+INFO:2025-03-04 20:57:48,187: - node_classifier - : epoch 84
+INFO:2025-03-04 20:57:48,254: - node_classifier - : Train: 0.9019, Test: 0.8524
+INFO:2025-03-04 20:57:48,255: - node_classifier - : epoch 85
+INFO:2025-03-04 20:57:48,320: - node_classifier - : Train: 0.9048, Test: 0.8487
+INFO:2025-03-04 20:57:48,320: - node_classifier - : epoch 86
+INFO:2025-03-04 20:57:48,387: - node_classifier - : Train: 0.8966, Test: 0.8266
+INFO:2025-03-04 20:57:48,387: - node_classifier - : epoch 87
+INFO:2025-03-04 20:57:48,453: - node_classifier - : Train: 0.8978, Test: 0.8266
+INFO:2025-03-04 20:57:48,454: - node_classifier - : epoch 88
+INFO:2025-03-04 20:57:48,520: - node_classifier - : Train: 0.9032, Test: 0.8524
+INFO:2025-03-04 20:57:48,521: - node_classifier - : epoch 89
+INFO:2025-03-04 20:57:48,586: - node_classifier - : Train: 0.9048, Test: 0.8487
+INFO:2025-03-04 20:57:48,587: - node_classifier - : epoch 90
+INFO:2025-03-04 20:57:48,654: - node_classifier - : Train: 0.8982, Test: 0.8376
+INFO:2025-03-04 20:57:48,655: - node_classifier - : epoch 91
+INFO:2025-03-04 20:57:48,719: - node_classifier - : Train: 0.8999, Test: 0.8339
+INFO:2025-03-04 20:57:48,719: - node_classifier - : epoch 92
+INFO:2025-03-04 20:57:48,781: - node_classifier - : Train: 0.8974, Test: 0.8598
+INFO:2025-03-04 20:57:48,781: - node_classifier - : epoch 93
+INFO:2025-03-04 20:57:48,841: - node_classifier - : Train: 0.9019, Test: 0.8598
+INFO:2025-03-04 20:57:48,842: - node_classifier - : epoch 94
+INFO:2025-03-04 20:57:48,905: - node_classifier - : Train: 0.9011, Test: 0.8376
+INFO:2025-03-04 20:57:48,905: - node_classifier - : epoch 95
+INFO:2025-03-04 20:57:48,970: - node_classifier - : Train: 0.9015, Test: 0.8303
+INFO:2025-03-04 20:57:48,971: - node_classifier - : epoch 96
+INFO:2025-03-04 20:57:49,033: - node_classifier - : Train: 0.9077, Test: 0.8635
+INFO:2025-03-04 20:57:49,033: - node_classifier - : epoch 97
+INFO:2025-03-04 20:57:49,099: - node_classifier - : Train: 0.9007, Test: 0.8561
+INFO:2025-03-04 20:57:49,099: - node_classifier - : epoch 98
+INFO:2025-03-04 20:57:49,161: - node_classifier - : Train: 0.8933, Test: 0.8376
+INFO:2025-03-04 20:57:49,162: - node_classifier - : epoch 99
+INFO:2025-03-04 20:57:49,223: - node_classifier - : Train: 0.9023, Test: 0.8450
+INFO:2025-03-04 20:57:49,234: - ExpGraphInfluenceFunction - : Model training time: 6.471073150634766
+INFO:2025-03-04 20:57:49,234: - ExpGraphInfluenceFunction - : model evaluation
+DEBUG:2025-03-04 20:57:49,234: - node_classifier - : generating posteriors
+INFO:2025-03-04 20:57:49,276: - ExpGraphInfluenceFunction - : Evaluation cost 0.04155778884887695 seconds.
+INFO:2025-03-04 20:57:49,277: - ExpGraphInfluenceFunction - : Final Test F1: 0.8450184501845017
+INFO:2025-03-04 20:57:49,278: - ExpGraphInfluenceFunction - : Final Test Accuracy: 0.8450184501845018
+INFO:2025-03-04 20:57:49,278: - ExpGraphInfluenceFunction - : Final Test Recall: 0.8450184501845018
+INFO:2025-03-04 20:57:49,278: - ExpGraphInfluenceFunction - : Final Test Precision: 0.8450184501845018
+DEBUG:2025-03-04 20:57:49,474: - node_classifier - : generating posteriors
+INFO:2025-03-04 20:57:49,515: - ExpGraphInfluenceFunction - : f1_score: avg=0.8364083640836407, std=0.0062718567202862795
+INFO:2025-03-04 20:57:49,515: - ExpGraphInfluenceFunction - : accuracy: avg=0.8364083640836407, std=0.006271856720286331
+INFO:2025-03-04 20:57:49,516: - ExpGraphInfluenceFunction - : recall: avg=0.8364083640836407, std=0.006271856720286331
+INFO:2025-03-04 20:57:49,516: - ExpGraphInfluenceFunction - : precision: avg=0.8364083640836407, std=0.006271856720286331
+INFO:2025-03-04 20:57:49,517: - ExpGraphInfluenceFunction - : model training time: avg=6.45204226175944 seconds
+INFO:2025-03-04 20:57:49,517: - ExpGraphInfluenceFunction - : f1_score of GIF: avg=0.8290282902829027, std=0.00460228460857806
+INFO:2025-03-04 20:57:49,517: - ExpGraphInfluenceFunction - : accuracy of GIF: avg=0.8413284132841329, std=0.0030129025126484402
+INFO:2025-03-04 20:57:49,517: - ExpGraphInfluenceFunction - : recall of GIF: avg=0.8413284132841329, std=0.0030129025126484402
+INFO:2025-03-04 20:57:49,518: - ExpGraphInfluenceFunction - : precision of GIF: avg=0.8413284132841329, std=0.0030129025126484402
+INFO:2025-03-04 20:57:49,518: - ExpGraphInfluenceFunction - : GIF unlearning time: avg=0.2235871950785319 seconds
