@@ -1,3 +1,27 @@
+# 数组形状和元素内容说明：
+# edge_index: [2, num_edges] - 整数，表示每条边的起始节点和终止节点
+# unique_indices: [num_unique_edges] - 整数，表示满足 edge_index[0] < edge_index[1] 条件的边的索引
+# unique_indices_not: [num_non_unique_edges] - 整数，表示满足 edge_index[0] > edge_index[1] 条件的边的索引
+# unique_edge_index: [2, num_unique_edges] - 整数，表示唯一边的起始节点和终止节点
+# delete_edge_indices: [num_unique_edges] - 布尔值，表示哪些唯一边需要删除
+# remain_indices: [num_unique_edges] 或 [num_remaining_edges] - 布尔值或整数，表示哪些边未被删除
+# remain_encode: [num_remaining_edges] - 整数，表示编码后的剩余边索引
+# unique_encode_not: [num_non_unique_edges] - 整数，表示编码后的非唯一边索引
+# sort_indices: [num_non_unique_edges] - 整数，表示排序后的非唯一边索引
+# remain_indices_not: [num_remaining_non_unique_edges] - 整数，表示未被删除的非唯一边的索引
+# remain_indices: [num_remaining_edges] - 整数，表示所有未被删除的边的索引（包括唯一边和非唯一边）
+# delete_nodes: [num_delete_nodes] - 整数，表示需要删除的节点
+# delete_edge_index: [num_delete_edges] - 整数，表示需要删除的边的索引
+# self.train_indices: [num_train_nodes] - 整数，表示训练数据集中节点的索引
+# self.test_indices: [num_test_nodes] - 整数，表示测试数据集中节点的索引
+# self.data.x_unlearn: [num_nodes, num_features] - 浮点数，表示节点的特征数据
+# self.data.edge_index_unlearn: [2, num_edges] - 整数，表示去学习后的边索引
+# unique_nodes: [num_unique_nodes] - 整数，表示唯一节点的索引
+# remove_indices: [num_remove_edges] - 整数，表示需要移除的边的索引
+# remove_edges: [2, num_remove_edges] - 整数，表示需要移除的边的起始节点和终止节点
+# influenced_nodes: [num_influenced_nodes] - 整数，表示受影响的节点
+# neighbor_nodes: [num_neighbor_nodes] - 整数，表示邻居节点
+
 from cgi import test  # 导入cgi模块中的test
 import logging  # 导入日志模块
 import time  # 导入时间模块
@@ -240,7 +264,7 @@ class ExpGraphInfluenceFunction(Exp):  # 定义ExpGraphInfluenceFunction类，�
             target_nodes_location = np.isin(edge_index[0], influenced_nodes)  # 获取目标节点位置
             neighbor_nodes = edge_index[1, target_nodes_location]  # 获取邻居节点
             influenced_nodes = np.append(influenced_nodes, neighbor_nodes)  # 更新影响节点
-            influenced_nodes = np.unique(influenced_nodes)  # 获取唯一影响节点
+            influenced_nodes = np.unique(influenced_nodes)  # 获取唯一影响节点（合并重复的index）
         neighbor_nodes = np.setdiff1d(influenced_nodes, unique_nodes)  # 获取邻居节点
         if self.args["unlearn_task"] == 'feature':  # 如果去学习任务是特征
             self.feature_nodes = unique_nodes  # 设置特征节点
@@ -253,8 +277,9 @@ class ExpGraphInfluenceFunction(Exp):  # 定义ExpGraphInfluenceFunction类，�
 
     def gif_approxi(self, res_tuple):  # GIF近似方法
         '''
-        res_tuple == (grad_all, grad1, grad2)
+        res_tuple == (grad_all, grad1, grad2)  # 全部梯度，保留梯度，删除梯度
         '''
+        # result_tuple = self.target_model.train_model((self.deleted_nodes, self.feature_nodes, self.influence_nodes))
         start_time = time.time()  # 记录开始时间
         iteration, damp, scale = self.args['iteration'], self.args['damp'], self.args['scale']  # 获取参数
 

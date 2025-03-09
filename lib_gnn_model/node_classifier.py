@@ -94,6 +94,8 @@ class NodeClassifier(GNNBase):
             train_acc, test_acc = self.evaluate_model()
             self.logger.info(f'Train: {train_acc:.4f}, Test: {test_acc:.4f}')
         
+        # out1：原始模型在完整数据上的输出。
+        # out2：去学习后模型在修改数据上的输出（如移除某些节点、边或特征）。
         grad_all, grad1, grad2 = None, None, None
         if self.args["method"] in ["GIF", "IF"]:
             if self.target_model in ['GCN','SGC']:
