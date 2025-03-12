@@ -162,3 +162,13 @@ g = f \cdot \frac{|\mathcal{N}(a)|}{|\mathcal{N}(b)|}, \quad f = g \cdot \frac{|
 $
 
 这一关系体现了节点度数对相互影响的调节作用。
+
+
+
+
+
+考虑a对b的影响，若ab是邻居，则\mathcal V^{rm}=b,则若删除a节点，\\
+\Delta\theta = H^{-1}_{\theta_{0}} \sum_{z_{i} \in \mathcal N_k \left(\mathcal a \right) \cup \mathcal a} \nabla_{\theta_{0}} l\left(f_{\mathcal{G}}(z_{i}), y_{i}\right) 
+- H^{-1}_{\theta_{0}} \sum_{z_{i} \in \mathcal{N}_{k}\left(\mathcal a \right)} \nabla_{\theta_{0}} l\left(f_{\mathcal{G}}(z_{i}; \mathcal{G} \setminus \Delta\mathcal{G}), y_{i}\right)\\
+h_b=f_{\mathcal G\setminus a}(b)|_{\hat \theta_a}\\
+相应地,h_a=f_{\mathcal G\setminus b}(b)|_{\hat \theta_b}\\
